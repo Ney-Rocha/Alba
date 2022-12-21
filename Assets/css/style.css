@@ -675,6 +675,23 @@ a.brand-icon-profile:hover{
     flex-direction: column;
     justify-content: space-around;
 }
+
+@media screen and (max-width:767px){
+    .choice-action{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+    .icon-choice{
+        margin-bottom: 15px;
+    }
+    .choice-action{
+        text-align: center;
+    }
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ------------- CARDS ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

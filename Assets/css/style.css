@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     font-weight: 400;
-    color: #737373;
+    color: #898989;
     overflow-x: hidden;
 }
 
@@ -32,37 +32,37 @@ h6{
 }
 
 h1 {
-    font-size: 37px;
+    font-size: 38px;
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 28px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h4 {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 h6{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.2;
     margin: 0;
 }
 
 .special{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.2;
     margin: 0;
 }
@@ -85,7 +85,7 @@ small{
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .text-primary {
-    color: #05377E !important;
+    color: #2B2869 !important;
 }
 
 .text-secondary {
@@ -132,6 +132,9 @@ small{
     position: relative;
 }
 
+.mb-7{
+    margin-bottom: 5rem;
+}
 .backdrop:after {
     content: " ";
     position: fixed;
@@ -174,6 +177,7 @@ ul{
     display: none !important;
 }
 
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS BODY BACKGROUND ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -204,6 +208,7 @@ ul{
 }
 .bg-gray{
     background-color:#E9EBE6;
+    color:#C8C8C8;
 }
 .bg-gray-light{
     background-color:#F8F8F8;
@@ -219,6 +224,8 @@ ul{
 
 .bg-orange{
     background-color:#FF9900;
+    color: #fff;
+
 }
 
 .bg-transparent{
@@ -227,7 +234,7 @@ ul{
 
 .bg-green{
     background-color: #00A651;
-
+    color: #fff;
 }
 
 
@@ -345,7 +352,13 @@ ul{
     align-items: center;
     font-size: 52px;
     margin-right: 15px;
+    color:#fff;
 }
+
+a.brand-icon-profile:hover{
+    color:#fff;
+}
+
 .brand-data-profile{
     font-size: 16px;
     color:#fff;
@@ -588,10 +601,12 @@ ul{
     width: 100%;
     top: 0;
     bottom: 0;
-   
 }
 
-.main{
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ------------- Main ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ .main{
     padding: 50px 32px;
 }
 
@@ -612,6 +627,53 @@ ul{
 .text-footer p{
     font-size: 8px;
     color: #24387F;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ -------------  HOME RESTRITA PAGE ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.header-content{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 45px;
+}
+.content-title{
+   margin-bottom: 15px;
+}
+.content-title h2{
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.choice-action{
+    padding: 35px 20px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.choice-action:hover{
+    color: #f0f0f0f0 ;
+    text-decoration: none;
+}
+
+.choice-action.bg-gray:hover{
+    color: #b5b5b5f2 ;
+    text-decoration: none;
+}
+.icon-choice{
+   width:85px; 
+   height: 85px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 25px;
+}
+
+.description-choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ------------- CARDS ---------------

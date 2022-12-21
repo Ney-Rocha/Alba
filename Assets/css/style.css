@@ -193,14 +193,17 @@ ul{
     background-color: #1AA0E1;
     color:#fff;
 }
-
+.bg-blue-middle{
+    background-color: #2B2869;
+    color:#fff;
+}
 .bg-blue-dark {
-    background-color: #05377E;
+    background-color: #242246;
     color:#fff;
 
 }
 .bg-gray{
-    background-color:#EDEDED;
+    background-color:#E9EBE6;
 }
 .bg-gray-light{
     background-color:#F8F8F8;
@@ -220,6 +223,11 @@ ul{
 
 .bg-transparent{
     background-color: transparent;
+}
+
+.bg-green{
+    background-color: #00A651;
+
 }
 
 
@@ -317,8 +325,296 @@ ul{
     box-shadow: 0px 5px 0px rgba(5, 55, 126, .46)!important;
     transition: all 0.3s;
  }
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
- ------------- GERAIS BODY FORMS E INPUTS ---------------
+ ------------- HEADERS ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.header_page_login{
+    display: flex;
+    align-items: center;
+    max-height: 81px;
+    padding: 7px 40px 13px;
+}
+.brand-icon-profile{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    margin-right: 15px;
+}
+.brand-data-profile{
+    font-size: 16px;
+    color:#fff;
+}
+
+.dropdown-menu {
+    left:initial;
+    right: 0px;
+    min-width: 20rem;
+}
+
+@media screen and (max-width:575px){
+    .header_page_login{        
+        max-height: initial;
+        padding: 10px 0px;
+    }
+
+    .navbar-toggler{
+        color:#fff;
+    }
+    .link-especial{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ------------- WRAPPER ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.wrapper{
+    width: 100%;
+    min-height: calc(100vh - 81px);
+    display: flex;
+    align-items: stretch;
+    background-color: #898989;
+    position: relative;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ------------- SIDEBAR ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.sidebar{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    max-width: 268px;
+    padding: 50px 10px;
+}
+.sidebar-menu{
+     padding: 0 30px;
+     margin-bottom: 60px;
+}
+.item-menu{
+    border:1px solid #fff;
+    border-radius: 7px;
+}
+.icon-menu{
+    font-size: 13px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-menu{
+    margin-left: 12px;
+}
+
+.item-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.item-menu a:hover{
+    text-decoration: none;
+    background-color: #18162e;
+    border-radius: 7px;
+}
+
+.content-help{
+    padding: 20px;
+    border-radius: 23px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.content-help h3{
+    font-size:15px;
+    margin-bottom: 8px;
+}
+
+.content-help p{
+    font-size:10px;
+    color:#fff;
+    line-height: 1.3;
+}
+
+.content-help a,
+.content-help a:hover{
+    font-size:10px;
+    color:#fff;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:768px){
+    .sidebar{
+        position: relative;
+        left: 0px;
+        width: 100px;
+        padding: 50px 10px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-in-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-in-out;        
+    }
+
+    .sidebar.show{
+        position: relative;
+        left: 0;
+        z-index: 10;
+        width: 100%!important;
+        max-width: 268px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-in-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-in-out;
+    }
+    
+    .sidebar-menu{
+        padding: 0 10px;
+    }
+
+    .sidebar.show .sidebar-menu{
+        padding: 0 30px;
+   }
+
+    .sidebar .title-menu{
+        display: none;
+    }
+
+    .sidebar.show .title-menu{
+        display: flex;
+    }
+    .sidebar-control{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top:1px solid #fff;
+    }
+
+    .sidebar .content-help{
+        display: none;
+    }
+    .sidebar.show .content-help{
+        display: block;
+    }
+
+    .button-sidebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .icon-control::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f101";
+        font-size:20px
+    }
+
+    .sidebar.show .icon-control::before{
+        font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f100";
+    }
+}
+
+@media screen and (max-width:575px){
+    .sidebar{
+        position: absolute;
+        left: -500px;
+        width: 268px;
+        padding: 50px 10px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-in-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-in-out;
+    }
+
+    .sidebar.show{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%!important;
+        max-width: 425px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-in-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-in-out;
+        
+    }
+
+    .sidebar .sidebar-control {
+        position: absolute;
+        bottom: 0;
+        left: initial;
+        right: -280px;
+        background: #242246;
+        width: 50px;
+        z-index: 16;
+       
+    }
+
+    .sidebar.show .sidebar-control {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ------------- WRAPPER-CONTENT ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.wrapper-content{
+    position: relative;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+   
+}
+
+.main{
+    padding: 50px 32px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 16px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.brand-footer{
+    width: 90px;
+    height: 23px;
+    margin-bottom: 10px;
+}
+.text-footer p{
+    font-size: 8px;
+    color: #24387F;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ------------- CARDS ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
  .card {

@@ -10,12 +10,18 @@
      <link rel="apple-touch-icon" href="Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
      <link rel="icon" href="Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
      <link rel="icon" href="Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-     <link rel="manifest" href="Assets/img/favicon/manifest.json /manifest.json">    
      <link rel="icon" href="Assets/img/favicon/apple-icon.png">
 
        <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <!--choosen-->
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+    <!--Sweetalert-->
+    <link rel="stylesheet" href="Assets/plugins/sweetalert2/sweetalert2.min.css">
+
+
+    <!--Styleshhet - Main-->
     <link rel="stylesheet" href="Assets/css/style.css">
 
 </head>
@@ -132,216 +138,219 @@
                         <h2>Informe os dados do cliente</h2>
                     </div>
 
+                    <div class="option-container">
+                        
+                        <div class="option-content"> 
+                            <label for="novoSeguro" class="radio-control">
+                                <input type="radio"  checked class="radio-control" name="typesecurity" id="novoSeguro">
+                                <strong class="nowrap">Novo Seguro</strong>                                  
+                                <span></span>
+                            </label>  
+
+                            <label for="newAlba" class="radio-control">
+                                <input type="radio" class="" name="typesecurity" id="newAlba">
+                                <strong class="nowrap">Renovação Alba</strong>                                  
+                                <span></span>
+                            </label>  
+
+                            <label for="newCongenere" class="radio-control">
+                                <input type="radio" class="" name="typesecurity" id="newCongenere">
+                                <strong class="nowrap">Seguro em Congênere</strong>                                  
+                                <span></span>
+                            </label>    
+                        </div><!--option-content-->
+                        
+                        <div class="option-content-add" id="">
+                            <label class="label-inline nowrap">Escolha a seguradora:</label>
+                            <select id="seguradora"class="chosen-select col-8"  tabindex="1">
+                                <option value="0">Selecione a Seguradora</option>
+                                <option value="1">Seguradora A</option>
+                                <option value="2">Seguradora B</option>
+                                <option value="3">Seguradora C</option>
+                                <option value="4">Seguradora D</option>
+                                <option value="5">Seguradora E</option>
+                                <option value="6">Seguradora F</option>
+                                <option value="7">Seguradora G</option>
+                                <option value="8">Seguradora H</option>
+                                <option value="9">Seguradora I</option>
+                                <option value="10">Seguradora J</option>
+                                <option value="11">Seguradora L</option>
+                                <option value="12">Seguradora M</option>
+                                <option value="13">Seguradora N</option>
+                            </select>                            
+                        </div><!--option-content-add-->
+                    </div><!--option-container-->
+
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-title">
-                                <h4>Estipulante</h4>
-                            </div><!--card-title-->
+                           
 
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-lg-3">
-
-                                        <div class="form-group">
-                                            <label for="cnpj" class="control-label label-strong">CNPJ</label>
-                                            <input type="text" id="cnpj" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                   
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label for="razaoSocial" class="control-label label-strong">Razão Social:</label>
-                                            <input type="text" id="razaoSocial" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="segAtividade" class="control-label label-strong">Segmento/Atividade:</label>
-                                            <input type="text" id="segAtividade" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                </div><!--row-->
-
-                                <div class="row">
-                                    <div class="col-lg-7">
-
-                                        <div class="form-group">
-                                            <label for="endereco" class="control-label label-strong">Endereço</label>
-                                            <input type="text" id="endereco" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                   
-                                    <div class="col-lg-1">
-                                        <div class="form-group">
-                                            <label for="numero" class="control-label label-strong">N:</label>
-                                            <input type="text" id="numero" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="complemento" class="control-label label-strong">Complemento:</label>
-                                            <input type="text" id="complemento" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                </div><!--row-->
-
-                                <div class="row">
-                                    <div class="col-lg-7">
-
-                                        <div class="form-group">
-                                            <label for="endereco" class="control-label label-strong">Endereço</label>
-                                            <input type="text" id="endereco" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                   
-                                    <div class="col-lg-1">
-                                        <div class="form-group">
-                                            <label for="numero" class="control-label label-strong">N:</label>
-                                            <input type="text" id="numero" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label for="complemento" class="control-label label-strong">Complemento:</label>
-                                            <input type="text" id="complemento" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                </div><!--row-->
-
-                                <div class="row mb-5">
-                                    <div class="col-lg-1">
-                                        <div class="form-group">
-                                            <label for="endereco" class="control-label label-strong">UF</label>
-                                            <input type="text" id="endereco" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-                                   
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label for="numero" class="control-label label-strong">Cidade</label>
-                                            <input type="text" id="numero" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-2">
-                                        <div class="form-group">
-                                            <label for="complemento" class="control-label label-strong">Cep</label>
-                                            <input type="text" id="complemento" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <label for="complemento" class="control-label label-strong">Email</label>
-                                            <input type="text" id="complemento" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->
-
-                                    <div class="col-lg-2">
-                                        <div class="form-group">
-                                            <label for="complemento" class="control-label label-strong">telefone/ SAC:</label>
-                                            <input type="text" id="complemento" class="form-control" required>
-                                            <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                        </div><!--form-group-->
-                                    </div><!--col-->                                    
-                                </div><!--row-->
-
-                                <div class="estipulante-add mt-3">
+                           <div class="mb-4">
+                                <form action="#">
                                     <div class="card-title">
-                                        <h4>Estipulante 1</h4>
-                                    </div><!--card-title-->
-                                    <div class="row">
-                                        <div class="col-lg-3">
-    
-                                            <div class="form-group">
-                                                <label for="cnpjEstipulante" class="control-label label-strong">CNPJ</label>
-                                                <input type="text" id="cnpjEstipulante" class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-                                       
-                                        <div class="col-lg-3">
-                                            <div class="form-group">
-                                                <label for="razaoSocialEstipulante" class="control-label label-strong">Razão Social:</label>
-                                                <input type="text" id="razaoSocialEstipulante" class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-    
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="segAtividadeEstipulante" class="control-label label-strong">Segmento/Atividade:</label>
-                                                <input type="text" id="segAtividadeEstipulante                          " class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-                                    </div><!--row-->
-                                </div><!--estipulante-->
-                               
-                                <div class="estipulante-add mt-3">
-                                    <div class="card-title">
-                                        <h4>Estipulante 2</h4>
-                                    </div><!--card-title-->
-                                    <div class="row">
-                                        <div class="col-lg-3">
-    
-                                            <div class="form-group">
-                                                <label for="cnpjEstipulante" class="control-label label-strong">CNPJ</label>
-                                                <input type="text" id="cnpjEstipulante" class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-                                       
-                                        <div class="col-lg-3">
-                                            <div class="form-group">
-                                                <label for="razaoSocialEstipulante" class="control-label label-strong">Razão Social:</label>
-                                                <input type="text" id="razaoSocialEstipulante" class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-    
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="segAtividadeEstipulante" class="control-label label-strong">Segmento/Atividade:</label>
-                                                <input type="text" id="segAtividadeEstipulante                          " class="form-control" required>
-                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                            </div><!--form-group-->
-                                        </div><!--col-->
-                                    </div><!--row-->
-                                </div><!--estipulante-->
-                               
-
-
-                                <div class="row mt-4 mb-4">
-                                    <div class="col-lg-12 ">
-                                        <div class="form-group ">
-                                            <button class="pull-right btn btn-outline-primary btn-icon">
-                                                Adicionar Subestipulante
-                                                <div class="icon-button ml-2">
-                                                    <i class="fa fa-user-friends"></i>
+                                        <h4>Estipulante</h4>
+        
+                                        <div class="card-title-button">
+                                            <button type="reset">
+                                                <div class="text-warning mr-2">
+                                                    <i class="fas fa-eraser"></i>
                                                 </div>
-                                            </button>
-                                        </div><!--form-group-->                                       
-                                    </div><!--col-->
-                                </div><!--row-->
+                                                Limpar
+                                            </button>                                        
+                                        </div><!--card-title-button-->
+                                    </div><!--card-title-->
+
+                                    <div class="estipulante-add mt-3">
+                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-group">
+                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" value="41.618.079/001-04"  id="cnpjEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
+                                                    <input type="text" value="XPTO LTDA"  id="razaoSocialEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="segAtividadeEstipulante"   class="control-label label-strong label-primary">Segmento/Atividade:</label>
+                                                    <input type="text" value="INDÚSTRIA" id="segAtividadeEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->
+                                    </div><!--estipulante-->
+                                </form><!--form-->
+                           </div><!--mt-->
+
+                            
+                           <div class="mt-4">
+                                <form action="#">
                                 
-                            </form>
+                                    <div class="card-title">
+                                        <h4>Subestipulante 1</h4>
+        
+                                        <div class="card-title-button">
+                                            <button type="reset">
+                                                <div class="text-warning mr-2">
+                                                    <i class="fas fa-eraser"></i>
+                                                </div>
+                                                Limpar
+                                            </button>
+                                            <button type="button">
+                                                <div class="text-danger mr-2">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </div>
+                                                excluir
+                                            </button>
+                                        </div><!--card-title-button-->
+                                    </div><!--card-title-->
+    
+                                    <div class="estipulante-add mt-3">                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-group group-danger">
+                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" id="cnpjEstipulante" value="41.618.079/001-04"  class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            
+                                            <div class="col-lg-3">
+                                                <div class="form-group  group-danger">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
+                                                    <input type="text" id="razaoSocialEstipulante" value="XPTO LTDA" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group  group-danger">
+                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento/Atividade:</label>
+                                                    <input type="text" value="INDÚSTRIA" id="segAtividadeEstipulante" value="INDÚSTRIA" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->
+                                    </div><!--estipulante-->
+                                </form> <!--form-->
+                           </div><!--mt-->
+
+                           <div class="mt-4">
+                                <form action="#">
+                                
+                                    <div class="card-title">
+                                        <h4>Subestipulante 2</h4>
+        
+                                        <div class="card-title-button">
+                                            <button type="reset">
+                                                <div class="text-warning mr-2">
+                                                    <i class="fas fa-eraser"></i>
+                                                </div>
+                                                Limpar
+                                            </button>
+                                            <button type="button">
+                                                <div class="text-danger mr-2">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </div>
+                                                excluir
+                                            </button>
+                                        </div><!--car-title-button-->
+                                    </div><!--card-title-->
+
+                                    <div class="estipulante-add mt-3">                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-grou">
+                                                    <label for="cnpjEstipulante"  class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" value="41.618.079/001-04" id="cnpjEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
+                                                    <input type="text"  value="XPTO LTDA" id="razaoSocialEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento/Atividade:</label>
+                                                    <input type="text"  value="INDÚSTRIA" id="segAtividadeEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->
+                                    </div><!--estipulante-->
+                                </form> 
+                            </div>
+                           
+                            <div class="row mt-4 mb-4">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group mt-4">
+                                        <button class="pull-right btn btn-outline-primary btn-icon">
+                                            Adicionar Subestipulante
+                                            <div class="icon-button ml-2">
+                                                <i class="fas fa-user-plus"></i>
+                                            </div>
+                                        </button>
+                                    </div><!--form-group-->                                       
+                                </div><!--col-->
+                            </div><!--row-->
                         </div>
                     </div><!--card-->
 
@@ -372,6 +381,33 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <!-- Chosen -->
+    <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="Assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
     <script src="Assets/js/main.js"></script>
+    <script>
+       $(document).ready(function() {
+           
+            Swal.fire({
+                title: '<h3 class="text-danger text-uppercase">Atenção!</h3>',
+                html: '<p> O subestipulante de número <span> 2 </span>, <strong> CNPJ <span>41.618.079/0001-04</span> </strong> está com restrição. Para continuar, exclua o estipulante ou mude o CNPJ.</p>',
+                imageUrl: '../Assets/img/icons/Error.png',
+                imageHeight:80,
+                imagewidht:80,
+                imageAlt: 'A tall image',
+                allowOutsideClick: false,
+                allowEscapeKey: false
+            })
+
+           
+        });
+
+
+       
+    </script>
 </body>
 </html>

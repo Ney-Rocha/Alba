@@ -132,6 +132,8 @@ small{
 .mb-7{
     margin-bottom: 5rem;
 }
+
+
 .backdrop:after {
     content: " ";
     position: fixed;
@@ -182,6 +184,19 @@ ul{
     transform: rotate(180deg);
 }
 
+.pw-n{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.ph-n{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.w-100{
+    width: 100%!important;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS BODY BACKGROUND ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -748,6 +763,11 @@ a.brand-icon-profile:hover{
     display: flex;
 }
 
+.card.card-tabs{
+    border-radius:16px;
+    padding: 0;
+}
+
 @media screen and (max-width:990px){
     .card{
         margin-top: 20px;
@@ -926,6 +946,27 @@ a.brand-icon-profile:hover{
     box-shadow: none;
 }
 
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ----------------- SWEETCHERY -------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .switchery {
+    background-color: #CCCCCC;
+    height: 10px;
+    border-radius: 5px;
+    width: 25px;
+}
+
+ .switchery > small {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+    height: 15px;
+    position: absolute;
+    top: -3px;
+    width: 15px;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ----------------- LABEL FORM -------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -977,7 +1018,7 @@ a.brand-icon-profile:hover{
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
     max-height: 36px;
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-size: 14px;   
     color: #495057;
     border: 1px solid #898989;
@@ -985,7 +1026,7 @@ a.brand-icon-profile:hover{
 }
 
 .form-control:focus {
-    color: #495057;
+    color: #495057; 
     background-color: #fff;
     border-color: #2e2c6f;
     outline: 0;
@@ -1045,6 +1086,8 @@ a.brand-icon-profile:hover{
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
     z-index: 1;
  }
 
@@ -1406,4 +1449,74 @@ a.brand-icon-profile:hover{
     .type-profile li a{
         margin-bottom: 6px;
     }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ----------------- COBERTURA  -------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .options{
+    width:100%;
+ }
+
+ .options thead tr th,
+ .options tbody tr td,
+ .options tfoot tr th{
+    border-right:1px solid #d8d8d8;
+    vertical-align: middle;
+    border-top:none;
+ }
+
+ .options thead tr th:last-child,
+ .options tbody tr td:last-child,
+ .options tfoot tr th:last-child{
+    border-right:none;
+ }
+ .options thead tr th{
+    font-size: 20px;
+    color: #898989;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: none;
+    padding: 20px 25px;
+ }
+
+ .options tbody tr td{
+    font-size: 14px;
+    color: #898989;
+    padding: 10px 25px;
+    border-top:none;
+ }
+
+ .options tbody tr:nth-of-type(even){
+   background-color: rgba(217, 217, 217, 0.14);
+ }
+
+
+.option-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-item{
+    padding: 10px;
+}
+.option-control{
+    width:90px;
+}
+
+.option-control input{
+    height: 30px;
+    position: relative;
+}
+
+.title-table{
+    padding: 20px 25px;
+    margin-bottom: 31px;
+    background-color: #d8d8d8;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #898989;
 }

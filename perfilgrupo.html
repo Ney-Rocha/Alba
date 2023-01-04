@@ -117,7 +117,7 @@
                 <div class="content-page">
 
                     <div class="header-content-page">
-                        <a href="#" class="btn btn-rewind">
+                        <a href="addEstipulante.html" class="btn btn-rewind">
                             <i class="fas fa-angle-left"></i>
                         </a>
                         <div class="container-progressbar">
@@ -145,7 +145,7 @@
                         </ul>
                     </div>
 
-                    <div class="tabs-container">
+                    <div class="tabs-container mb-5">
                         <div class="tabs-header">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#tab-1" class="active" data-toggle="tab">Estipulante</a></li>
@@ -170,12 +170,15 @@
                                         </ul>
                                     </div>
 
-                                    <div class="group-card">
-                                        <div class="card active" data-id="card-1">
+                                    <div class="group-card mt-4">
+                                        <div class="card card-tabs active" data-id="card-1">
                                             <div class="card-body">                    
                                                 <div class="mb-4">
                                                     <form action="#">
                                                         <div class="card-title">
+                                                            <div class="form-description mb-4">
+                                                                <p class="strong text-primary">Capital Global Uniforme </p>
+                                                            </div>
                                                             <div class="option-content mb-4"> 
                                                                 <label for="colaboradores" class="radio-control">
                                                                     <input type="radio"  checked class="radio-control" name="tipogrupo" id="colaboradores">
@@ -194,17 +197,12 @@
                                                                     <strong class="nowrap">Colaboradores + Sócios</strong>                                  
                                                                     <span></span>
                                                                 </label>    
-                                                            </div><!--option-content-->
-                            
-                                                            <div class="form-description">
-                                                                <p>
-                                                                    <small class="strong text-primary">Capital Global Uniforme</small>
-                                                                </p>
-                                                            </div>
+                                                            </div><!--option-content-->                            
+                                                            
                                                         </div><!--card-title-->
                                                         
 
-                                                        <div class="content-profile active" data-id="colaboradores">
+                                                        <div class="content-profile active">
                                                             <div class="row mt-3">
                                                                 <div class="col-lg-6">                        
                                                                     <div class="form-group">
@@ -251,270 +249,25 @@
                                                             </div><!--row-->
                                                         </div><!--content-profile-->
 
-                                                        <div class="content-profile" data-id="socios">
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdvidasUni2" class="control-label label-strong label-smaller">
-                                                                            Quantidade de vidas
-                                                                        </label>
-                                                                        <input type="text" id="qtdvidasUni2" value="500"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-groupp">
-                                                                        <label for="capIndUni2" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                        <input type="text" id="capIndUni2" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                        
-                                                    
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="capTotalUni2" class="control-label label-strong ">Capital Total Segurado</label>
-                                                                        <input type="text" id="capTotalUni2" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label label-strong label-smaller ">Custeio:</label>
-                                                                        <div class="mt-1">
-                                                                            <label for="custeio" class="radio-control">
-                                                                                <input type="radio" class="" checked disabled name="custeio2" id="custeio2">
-                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                                <span></span>
-                                                                            </label>    
-                                                                        </div>
-                                                                        
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                                                        </div><!--content-profile-->
-
-                                                        
-                                                        <div class="content-profile" data-id="colabSocios">
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-12 mb-3">
-                                                                    <p ><small class="strong">Sócios/Diretores</small> </p>
-                                                                </div>
-                                                                
-                                                                <div class="col-lg-4">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdVidasSocUni1" class="control-label label-strong label-smaller">Quantidade de vidas</label>
-                                                                        <input type="text" id="qtdVidasSocUni1" value="500"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-4">
-                                                                    <div class="form-group">
-                                                                        <label for="capIndSocUni1" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                        <input type="text" id="capIndSocUni1" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-    
-                                                                <div class="col-lg-4">
-                                                                    <div class="form-group">
-                                                                        <label for="capSegGrpSocUni1" class="control-label label-strong label-smaller ">Capital Segurado Grupo Sócios/Diretores</label>
-                                                                        <input type="text" id="capSegGrpSocUni1" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                            </div><!--row-->
-                        
-                                                    
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-12 mb-3">
-                                                                    <p ><small class="strong">Colaboradores</small> </p>
-                                                                </div>
-                                                                <div class="col-lg-4">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdVidasUniColab1" class="control-label label-smaller label-strong ">Quantidade de vidas</label>
-                                                                        <input type="text" id="qtdVidasUniColab1" value="500"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-4">
-                                                                    <div class="form-group">
-                                                                        <label for="capIndUni1" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                        <input type="text" id="capIndUni1" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-    
-                                                                <div class="col-lg-4">
-                                                                    <div class="form-group">
-                                                                        <label for="capSegSocUni1" class="control-label label-strong label-smaller">Capital Segurado Grupo Sócios/Diretores</label>
-                                                                        <input type="text" id="capSegSocUni1" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                            </div><!--row-->
-                        
-                                                    
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdVidasUniTot1" class="control-label label-strong ">Quantidade de vidas</label>
-                                                                        <input type="text" id="qtdVidasUniTot1" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label label-strong ">Custeio:</label>
-                                                                        <div class="mt-1">
-                                                                            <label for="custeio" class="radio-control">
-                                                                                <input type="radio" class="" checked disabled name="custeio3" id="custeio3">
-                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                                <span></span>
-                                                                            </label>    
-                                                                        </div>
-                                                                        
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                                                        </div><!--content-profile-->
-
                                                     </form>
                                                 </div><!--mb-->
                                             </div><!--card-body-->
                                         </div><!--card-->
 
-                                        <div class="card" data-id="card-2">
+                                        <div class="card card-tabs" data-id="card-2">
                                             <div class="card-body">                    
                                                 <div class="mb-4">
                                                     <form action="#">
                                                         <div class="card-title">
-                                                            <div class="option-content mb-4" id="colabSoci"> 
-                                                                <label for="colaboradoresEsc2" class="radio-control">
-                                                                    <input type="radio" class="" checked  name="tipogrupoEsc2" id="colaboradoresEsc2">
-                                                                    <strong class="nowrap">Colaboradores</strong>                                  
-                                                                    <span></span>
-                                                                </label>  
-                                    
-                                                                <label for="sociosEsc2" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupoEsc2" id="sociosEsc2">
-                                                                    <strong class="nowrap">Sócios</strong>                                  
-                                                                    <span></span>
-                                                                </label>  
-                                    
-                                                                <label for="colabSociosEsc2" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupoEsc2" id="colabSociosEsc2">
-                                                                    <strong class="nowrap">Colaboradores + Sócios</strong>                                  
-                                                                    <span></span>
-                                                                </label>    
-                                                            </div><!--option-content-->
-                            
-                                                            <div class="form-description">
-                                                                <p> <small class="strong text-primary">Capital Global Escalonável</small></p>
+                                                            <div class="form-description mb-4">
+                                                                <p class="strong text-primary">Capital Global Escalonável</p>
                                                             </div>
                                                         </div><!--card-title-->
-                                                        
-                                                        <div class="content-profile active" data-id="colaboradoresEsc2">
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdvidasUni" class="control-label label-strong label-smaller">Quantidade de vidas</label>
-                                                                        <input type="text" id="qtdvidasUni" value="500"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-groupp">
-                                                                        <label for="capIndUni" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                        <input type="text" id="capIndUni" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                        
-                                                    
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="capTotalUni" class="control-label label-strong ">Capital Total Segurado</label>
-                                                                        <input type="text" id="capTotalUni" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label label-strong label-smaller ">Custeio:</label>
-                                                                        <div class="mt-1">
-                                                                            <label for="custeio" class="radio-control">
-                                                                                <input type="radio" class="" checked disabled name="custeio" id="custeio">
-                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                                <span></span>
-                                                                            </label>    
-                                                                        </div>
-                                                                        
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                                                        </div>
 
-                                                        <div class="content-profile" data-id="sociosEsc2">
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="qtdvidasUni" class="control-label label-strong label-smaller">Quantidade de vidas</label>
-                                                                        <input type="text" id="qtdvidasUni" value="500"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-groupp">
-                                                                        <label for="capIndUni" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                        <input type="text" id="capIndUni" value="R$ 10.000" class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                        
-                                                    
-                                                            <div class="row mt-3">
-                                                                <div class="col-lg-6">                        
-                                                                    <div class="form-group">
-                                                                        <label for="capTotalUni" class="control-label label-strong ">Capital Total Segurado</label>
-                                                                        <input type="text" id="capTotalUni" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->
-                                                                
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label label-strong label-smaller ">Custeio:</label>
-                                                                        <div class="mt-1">
-                                                                            <label for="custeio" class="radio-control">
-                                                                                <input type="radio" class="" checked disabled name="custeio" id="custeio">
-                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                                <span></span>
-                                                                            </label>    
-                                                                        </div>
-                                                                        
-                                                                    </div><!--form-group-->
-                                                                </div><!--col-->                                        
-                                                            </div><!--row-->
-                                                        </div>
-
-                                                        <div class="content-profile" data-id="colabSociosEsc2">
+                                                        <div class="content-profile active">
                                                             <div class="row mt-3">
                                                                 <div class="col-lg-12 mb-3">
-                                                                    <p ><small class="strong">Sócios/Diretores</small> </p>
+                                                                    <p class="strong text-primary">Sócios/Diretores </p>
                                                                 </div>
                                                                 
                                                                 <div class="col-lg-4">                        
@@ -545,7 +298,7 @@
                                                     
                                                             <div class="row mt-3">
                                                                 <div class="col-lg-12 mb-3">
-                                                                    <p ><small class="strong">Colaboradores</small> </p>
+                                                                    <p class="strong text-primary">Colaboradores</small> </p>
                                                                 </div>
                                                                 <div class="col-lg-4">                        
                                                                     <div class="form-group">
@@ -611,191 +364,226 @@
                                         </div>
                                         <ul class="type-profile">
                                             <li>
-                                                <a href="#">Uniforme</a>
+                                                <a data-id="card-1" class="active">Uniforme</a>
                                             </li>
                                             <li>
-                                                <a href="#"class="active">Escalonável</a>
+                                                <a data-id="card-2">Escalonável</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                           
-                
-                                           <div class="mb-4">
-                                                <form action="#">
-                                                    <div class="card-title">
-                                                        <div class="option-content mb-4"> 
-                                                            <label for="colaboradores" class="radio-control">
-                                                                <input type="radio"  checked class="radio-control" name="tipogrupo" id="colaboradores">
-                                                                <strong class="nowrap">Colaboradores</strong>                                  
-                                                                <span></span>
-                                                            </label>  
-                                
-                                                            <label for="socios" class="radio-control">
-                                                                <input type="radio" class="" name="tipogrupo" id="socios">
-                                                                <strong class="nowrap">Sócios</strong>                                  
-                                                                <span></span>
-                                                            </label>  
-                                
-                                                            <label for="colabSocios" class="radio-control">
-                                                                <input type="radio" class="" name="tipogrupo" id="colabSocios">
-                                                                <strong class="nowrap">Colaboradores + Sócios</strong>                                  
-                                                                <span></span>
-                                                            </label>    
-                                                        </div><!--option-content-->
+
+                                    <div class="group-card mt-4">
+                                        <div class="card card-tabs active" data-id="card-1">
+                                            <div class="card-body">                    
+                                                <div class="mb-4">
+                                                    <form action="#">
+                                                        <div class="card-title">
+                                                            <div class="form-description mb-4">
+                                                                <p class="strong text-primary">Capital Global Uniforme </p>
+                                                            </div>
+                                                            <div class="option-content mb-4"> 
+                                                                <label for="colaboradores" class="radio-control">
+                                                                    <input type="radio"  checked class="radio-control" name="tipogrupo" id="colaboradores">
+                                                                    <strong class="nowrap">Colaboradores</strong>                                  
+                                                                    <span></span>
+                                                                </label>  
+                                    
+                                                                <label for="socios" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo" id="socios">
+                                                                    <strong class="nowrap">Sócios</strong>                                  
+                                                                    <span></span>
+                                                                </label>  
+                                    
+                                                                <label for="colabSocios" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo" id="colabSocios">
+                                                                    <strong class="nowrap">Colaboradores + Sócios</strong>                                  
+                                                                    <span></span>
+                                                                </label>    
+                                                            </div><!--option-content-->                            
+                                                            
+                                                        </div><!--card-title-->
+                                                        
+
+                                                        <div class="content-profile active">
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-6">                        
+                                                                    <div class="form-group">
+                                                                        <label for="qtdvidasUni1" class="control-label label-strong label-smaller">
+                                                                            Quantidade de vidas
+                                                                        </label>
+                                                                        <input type="text" id="qtdvidasUni1" value="500"  class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                                
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-groupp">
+                                                                        <label for="capIndUni1" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
+                                                                        <input type="text" id="capIndUni1" value="R$ 10.000" class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->                                        
+                                                            </div><!--row-->
                         
-                                                        <div class="form-description">
-                                                            <p> <small class="strong text-primary">Capital Global Escalonável</small></p>
-                                                        </div>
-                                                    </div><!--card-title-->
                                                     
-                                                    <div class="row mt-3">
-                                                        <div class="col-lg-12 mb-3">
-                                                            <p class="strong">Sócios/Diretores</p>
-                                                        </div>
-                                                        
-                                                        <div class="col-lg-4">                        
-                                                            <div class="form-group">
-                                                                <label for="cnpjEstipulante" class="control-label label-strong ">Quantidade de vidas</label>
-                                                                <input type="text" id="cnpjEstipulante" value="500"  class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                        
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label for="razaoSocialEstipulante" class="control-label label-strong ">Capital Individual (Limite de R$ 100.000)</label>
-                                                                <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-6">                        
+                                                                    <div class="form-group">
+                                                                        <label for="capTotalUni1" class="control-label label-strong ">Capital Total Segurado</label>
+                                                                        <input type="text" id="capTotalUni1" value="R$ 5.000.000,00"  class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                                
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label label-strong label-smaller ">Custeio:</label>
+                                                                        <div class="mt-1">
+                                                                            <label for="custeio" class="radio-control">
+                                                                                <input type="radio" class="" checked disabled name="custeio" id="custeio1">
+                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
+                                                                                <span></span>
+                                                                            </label>    
+                                                                        </div>
+                                                                        
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->                                        
+                                                            </div><!--row-->
+                                                        </div><!--content-profile-->
 
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label for="razaoSocialEstipulante" class="control-label label-strong ">Capital Segurado Grupo Sócios/Diretores</label>
-                                                                <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                    </div><!--row-->
-                
-                                            
-                                                    <div class="row mt-3">
-                                                        <div class="col-lg-6">                        
-                                                            <div class="form-group">
-                                                                <label for="cnpjEstipulante" class="control-label label-strong ">Quantidade de vidas</label>
-                                                                <input type="text" id="cnpjEstipulante" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                        
-                                                        <div class="col-lg-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label label-strong ">Custeio:</label>
-                                                                <div class="mt-1">
-                                                                    <label for="custeio" class="radio-control">
-                                                                        <input type="radio" class="" checked disabled name="custeio" id="custeio">
-                                                                        <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                        <span></span>
-                                                                    </label>    
+                                                    </form>
+                                                </div><!--mb-->
+                                            </div><!--card-body-->
+                                        </div><!--card-->
+
+                                        <div class="card card-tabs" data-id="card-2">
+                                            <div class="card-body">                    
+                                                <div class="mb-4">
+                                                    <form action="#">
+                                                        <div class="card-title">
+                                                            <div class="form-description mb-4">
+                                                                <p class="strong text-primary">Capital Global Escalonável</p>
+                                                            </div>
+                                                        </div><!--card-title-->
+
+                                                        <div class="content-profile active">
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-12 mb-3">
+                                                                    <p class="strong text-primary">Sócios/Diretores </p>
                                                                 </div>
                                                                 
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->                                        
-                                                    </div><!--row-->
-
-                                                    <div class="row mt-3">
-                                                        <div class="col-lg-12 mb-3">
-                                                            <p ><small class="strong">Sócios/Diretores</small> </p>
-                                                        </div>
-                                                        <div class="col-lg-4">                        
-                                                            <div class="form-group">
-                                                                <label for="cnpjEstipulante" class="control-label label-smaller label-strong ">Quantidade de vidas</label>
-                                                                <input type="text" id="cnpjEstipulante" value="500"  class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                        
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label for="razaoSocialEstipulante" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
-                                                                <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label for="razaoSocialEstipulante" class="control-label label-strong label-smaller">Capital Segurado Grupo Sócios/Diretores</label>
-                                                                <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                    </div><!--row-->
-                
-                                            
-                                                    <div class="row mt-3">
-                                                        <div class="col-lg-6">                        
-                                                            <div class="form-group">
-                                                                <label for="cnpjEstipulante" class="control-label label-strong ">Quantidade de vidas</label>
-                                                                <input type="text" id="cnpjEstipulante" value="R$ 5.000.000,00"  class="form-control" required>
-                                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->
-                                                        
-                                                        <div class="col-lg-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label label-strong ">Custeio:</label>
-                                                                <div class="mt-1">
-                                                                    <label for="custeio" class="radio-control">
-                                                                        <input type="radio" class="" checked disabled name="custeio" id="custeio">
-                                                                        <strong class="nowrap">Não contribuitário</strong>                                  
-                                                                        <span></span>
-                                                                    </label>    
-                                                                </div>
+                                                                <div class="col-lg-4">                        
+                                                                    <div class="form-group">
+                                                                        <label for="qtdVidasSocEsc" class="control-label label-strong label-smaller">Quantidade de vidas</label>
+                                                                        <input type="text" id="qtdVidasSocEsc" value="500"  class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
                                                                 
-                                                            </div><!--form-group-->
-                                                        </div><!--col-->                                        
-                                                    </div><!--row-->
-                                                </form>
-                                            </div><!--mb-->
-                                        </div><!--card-body-->
-                                    </div><!--card-->                     
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label for="capIndSocEsc" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
+                                                                        <input type="text" id="capIndSocEsc" value="R$ 10.000" class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+    
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label for="capSegGrpSocEsc" class="control-label label-strong label-smaller ">Capital Segurado Grupo Sócios/Diretores</label>
+                                                                        <input type="text" id="capSegGrpSocEsc" value="R$ 10.000" class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                            </div><!--row-->
+                        
+                                                    
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-12 mb-3">
+                                                                    <p class="strong text-primary">Colaboradores</small> </p>
+                                                                </div>
+                                                                <div class="col-lg-4">                        
+                                                                    <div class="form-group">
+                                                                        <label for="cnpjEstipulante" class="control-label label-smaller label-strong ">Quantidade de vidas</label>
+                                                                        <input type="text" id="cnpjEstipulante" value="500"  class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                                
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label for="razaoSocialEstipulante" class="control-label label-strong label-smaller">Capital Individual (Limite de R$ 100.000)</label>
+                                                                        <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+    
+                                                                <div class="col-lg-4">
+                                                                    <div class="form-group">
+                                                                        <label for="razaoSocialEstipulante" class="control-label label-strong label-smaller">Capital Segurado Grupo Sócios/Diretores</label>
+                                                                        <input type="text" id="razaoSocialEstipulante" value="R$ 10.000" class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                            </div><!--row-->
+                        
+                                                    
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-6">                        
+                                                                    <div class="form-group">
+                                                                        <label for="cnpjEstipulante" class="control-label label-strong ">Quantidade de vidas</label>
+                                                                        <input type="text" id="cnpjEstipulante" value="R$ 5.000.000,00"  class="form-control" required>
+                                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->
+                                                                
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label label-strong ">Custeio:</label>
+                                                                        <div class="mt-1">
+                                                                            <label for="custeio" class="radio-control">
+                                                                                <input type="radio" class="" checked disabled name="custeio" id="custeio">
+                                                                                <strong class="nowrap">Não contribuitário</strong>                                  
+                                                                                <span></span>
+                                                                            </label>    
+                                                                        </div>
+                                                                        
+                                                                    </div><!--form-group-->
+                                                                </div><!--col-->                                        
+                                                            </div><!--row-->
+                                                        </div>
+                                                    </form>
+                                                </div><!--mb-->
+                                            </div><!--card-body-->
+                                        </div><!--card-->     
+                                    </div>  <!--card-group-->
                                 </div><!--tab pane-->
                                 <div class="tab-pane" id="tab-3">
-                                    Sybestipulante 2
+                                    Subestipulante 2
                                 </div><!--tab pane-->
                             </div>
                         </div>
                     </div>
-                   
 
                     <div class="row mt-5">
                         <div class="col-md-4 mr-auto mb-5">
-                            <button class="pull-left btn btn-gray btn-block btn-icon">
+                            <a href="addEstipulante.html" class="pull-left btn btn-gray btn-block btn-icon">
                                 <div class="icon-button mr-2">
                                     <i class=" flip fa fa-play"></i>
                                 </div>
                                 Etapa Anterior
                                 
-                            </button>
+                            </a>
                         </div><!--col-->
                         <div class="col-md-4 ml-auto mb-5">
-                            <button class="pull-right btn btn-secondary btn-block btn-icon">                                
+                            <a href="coberturas.html" class="pull-right btn btn-secondary btn-block btn-icon">                                
                                 Próxima etapa
                                 <div class="icon-button ml-2">
                                     <i class="fa fa-play"></i>
                                 </div>
-                            </button>
+                            </a>
                         </div><!--col-->
                     </div><!--row-->
-
-
-
-
-
-
 
                 </div><!--content-page-->
                 
@@ -834,18 +622,8 @@
                 });    
                 content.addClass('active');
             });
+             
 
-
-            
-            //Troca de tipo de segurado (colab/Socio/Colab+socio)
-            $(".option-content input:radio").on('click', function() {
-                var $box = $(this);
-                $('.content-profile').removeClass('active');
-                var content = $('.content-profile').filter(function() { 
-                    return $(this).data("id") == $box.attr('id')
-                });
-                content.addClass('active');
-            })
          });
 
         

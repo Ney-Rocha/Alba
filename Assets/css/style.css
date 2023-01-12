@@ -1328,8 +1328,11 @@ a.brand-icon-profile:hover{
 }
 
 @media screen and (max-width:1024px){
-    
-    
+
+    .content-page {
+        margin-left: 30px;
+    }  
+      
     .option-container{
         flex-direction: column;
         
@@ -1338,6 +1341,8 @@ a.brand-icon-profile:hover{
     .option-content{        
         margin-bottom: 20px;
         justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
     }
     .option-content-add{
         justify-content: center;
@@ -1644,6 +1649,23 @@ a.brand-icon-profile:hover{
     margin-left: 40px;
 }
 
+@media screen and (max-width:1024px){
+    .option-group {
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .options thead tr th,
+    .options tbody tr th{
+        padding: 25px 30px;
+    }
+
+    .option-control {
+        width: 65px;
+    }
+}
+
 @media screen and (max-width:550px){
     .calc-list-title,
     .calc-resume,
@@ -1656,3 +1678,48 @@ a.brand-icon-profile:hover{
         font-size:25px
     }
 }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ----------------- EMISSÃO  -------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ .ticket-container{
+    border: 1px solid #bbb9b9;
+ }
+ .ticket tr.title{
+    background-color: #2b2869!important;
+    color:#fff!important;
+ }
+
+
+ .ticket tr.subtitle{
+    background-color: #DCE0EA!important;
+    color:#898989!important;
+ }
+.ticket tr:nth-child(3){
+    background-color: #fff!important;
+    color:#898989;
+ }
+ .ticket tr:nth-child(2n + 3){
+    background-color: #F3F3F3;
+    color:#898989;
+ }
+
+ .ticket tr td{
+    border-right: 1px solid #d1d1d1;
+    color: #898989;
+    font-size: 15px;
+    border-top:none;
+ }
+
+ .ticket tr td:last-child{
+    border-right: none;
+ }
+
+ .ticket tr.title td{
+    color: #fff;
+    font-size: 20px;
+ }
+
+ .ticket tr td.small{
+    font-size: 12px;
+ }

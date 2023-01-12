@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+     <!-- Favicons -->
+     <link rel="apple-touch-icon" href="Assets/img/favicon/apple-icon-180x180.png" sizes="180x180">
+     <link rel="icon" href="Assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+     <link rel="icon" href="Assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+     <link rel="icon" href="Assets/img/favicon/apple-icon.png">
+
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+
+    <!-- https://codepen.io/guilhermefilipiak/pen/oBaRgZ -->
+    <link rel="stylesheet" href="Assets/plugins/switchery/switchery.css">
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="#">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="#">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                        
+                    </a>
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">
+                <div class="content-page">
+
+                    <div class="header-content-page">
+                        <a href="perfilgrupo.html" class="btn btn-rewind">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div class="container-progressbar">
+                            <ul class="progressbar-step">
+                                <li class="active">Dados do Cliente</li>
+                                <li class="active"> Perfil do grupo</li>
+                                <li class="active">Coberturas e assistências</li>
+                                <li class="active">cotação</li>
+                                <li>Proposta</li>
+                            </ul><!---progressbar-step-->
+                        </div>   <!--container-progressbar-step-->
+                    </div><!--header-content-page-->
+
+                    <div class="title-content">
+                        <ul class="tag-container">
+                            <li>
+                                <div class="tag">
+                                    <p>Nº de Cotação: <span>00011</span></p>
+                                </div>
+                            <li>
+                                <div class="tag">
+                                    <p>Data: <span>25/11/2022</span></p>                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="ticket-container">
+                        <div class="table mb-0">
+                            <table class="ticket">
+                                
+                                <tbody>
+                                    <tr class="title text-uppercase strong">
+                                        <td colspan="6">
+                                            Estipulante
+                                        </td>
+                                    </tr>
+                                    <tr class="subtitle">
+                                        <td colspan="4" class="strong">XPTO LTDA</td>
+                                        <td colspan="2"><span class="strong">CNPJ</span>     <span>41.618.079/0001-04</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"><span class="strong">CNPJ:</span> - <span> xxxxxxxxxx</span></td>
+                                        <td colspan="2">Seguro Transf. de Seguradora</td>
+                                    </tr>
+                                    
+                                    <tr class="title text-uppercase strong">
+                                        <td colspan="6">
+                                            Subestipulante
+                                        </td>
+                                    </tr>
+                                    <tr class="subtitle">
+                                        <td colspan="4">XPTO LTDA - <span>Socios/Diretores</span></td>
+                                        <td colspan="2">CNPJ <span>60.635.374/0001-04</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="toppings-title strong">
+                                                Coberturas
+                                            </div>
+                                            <ul>
+                                                <li>Principal: <span>Morte; MA 100%; IPA até 100%; IFPD 100%;</span></li>
+                                                <li>Cônjuge: <span>Morte 50%,</span></li>
+                                                <li>Filhos:<span>Morte 10% máx. R$ 10.000,00;</span></li>
+                                            </ul>
+                                        </td>
+                                        <td colspan="4">
+                                            <div class="toppings-title strong">
+                                                Assistências
+                                            </div>
+                                            <ul>
+                                                <li>Funeral Fam. até R% <span>5.000,00;</span></li>
+                                                <li>Cesta básica R$ <span>150,00</span>X <span>6</span>meses;</li>
+                                                <li>Cesta nNatalidade:<span>I;</span></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="strong">Tipo de Capital Segurado: <span>Global</span>  </li>
+                                        <td>Individual: <span>R$ 10.000,00</span></td>
+                                        <td>Individual Máx: <span>R$ 10.000,00</span></td>
+                                        <td>IS total: <span>R$ 5.000.000,00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small">
+                                            Vidas Cotadas:
+                                            <span>490</span>
+                                        </td>
+                                        <td class="small"> 
+                                            Limite de idade: 
+                                            <span>65</span>
+                                        </td>
+                                        <td class="small" >
+                                           Adesão
+                                           <span>Compulsória</span>
+                                        </td>
+                                        <td class="small">
+                                            Custeio:
+                                            <Span>Não Contributário</Span>
+                                        </td>
+                                        
+                                        <td class="small strong">
+                                           Taxa Média Mensal: 
+                                            <span>0,2512%</span>
+                                        </td>
+                                        <td class="small strong">
+                                            Prêmio total estimado: 
+                                             <span>R$ 1.331,36</span>
+                                         </td>
+                                    </tr>
+                                    <tr class="subtitle">
+                                        <td colspan="4" class="strong">XPTO LTDA - <span>Colaboradores</span></td>
+                                        <td colspan="2"><span class="strong">CNPJ:</span> <span>60.635.374/0001-04</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="toppings-title strong">
+                                                Coberturas
+                                            </div>
+                                            <ul>
+                                                <li>Principal: <span>Morte; MA 100%; IPA até 100%; IFPD 100%;</span></li>
+                                                <li>Cônjuge: <span>Morte 50%,</span></li>
+                                                <li>Filhos:<span>Morte 10% máx. R$ 10.000,00;</span></li>
+                                            </ul>
+                                        </td>
+                                        <td colspan="4">
+                                            <div class="toppings-title strong">
+                                                Assistências
+                                            </div>
+                                            <ul>
+                                                <li>Funeral Fam. até R% <span>5.000,00;</span></li>
+                                                <li>Cesta básica R$ <span>150,00</span>X <span>6</span>meses;</li>
+                                                <li>Cesta nNatalidade:<span>I;</span></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="strong">Tipo de Capital Segurado: <span>Global</span>  </li>
+                                        <td>Individual: <span>R$ 10.000,00</span></td>
+                                        <td>Individual Máx: <span>R$ 10.000,00</span></td>
+                                        <td>IS total: <span>R$ 5.000.000,00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Vidas Cotadas:
+                                            <span>490</span>
+                                        </td>
+                                        <td> 
+                                            Limite de idade: 
+                                            <span>65</span>
+                                        </td>
+                                        <td >
+                                           Adesão
+                                           <span>Compulsória</span>
+                                        </td>
+                                        <td >
+                                            Custeio:
+                                            <Span>Não Contributário</Span>
+                                        </td>
+                                        
+                                        <td class="strong">
+                                           Taxa Média Mensal: 
+                                            <span>0,2512%</span>
+                                        </td>
+                                        <td class="strong">
+                                            Prêmio total estimado: 
+                                             <span>R$ 1.331,36</span>
+                                         </td>
+                                    </tr>
+                                    <tr class="title">
+                                        <td class="small">
+                                            Vidas Cotadas:
+                                            <span>500</span>
+                                        </td>
+                                        <td class="small"> 
+                                            Limite de idade: 
+                                            <span>65</span>
+                                        </td>
+                                        <td colspan="2" class="small">
+                                            IS total: 
+                                            <span>R$ 5.000.000,00</span>
+                                        </td>
+                                        
+                                        <td class="small strong">
+                                           Taxa Média Mensal: 
+                                            <span>0,2512%</span>
+                                        </td>
+                                        <td class="small strong">
+                                            Prêmio total estimado: 
+                                             <span>R$ 1.331,36</span>
+                                         </td>
+                                    </tr>
+                                </tbody>
+                            </table><!--table-->
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-12">
+                            <p> - Taxa média mensal já incluso IOF (0,38%)</p>
+                            <p> - Aplicam-se os percentuais das coberturas sobre o capital segurado da cobertura de Morte para determinação de seus respectivos valores.</p> 
+                            <p> - Caso seja constatada qualquer insuficiência, omissão, excesso ou alteração nos dados fornecidos pelo ESTIPULANTE à SEGURADORA, quando da implantação da Apólice ou da emissão do primeiro faturamento, que provoque desvio superior a 10% (dez por cento) no cálculo atuarial que resultou a taxa apurada, tal taxa será  recalculada de forma a manter íntegras as condições contratadas, sob pena da apólice ser cancelada.</p> 
+
+                            <p class="mt-3">Este estudo possui caráter meramente ilustrativo, visa subsidiar a tomada de decisão do proponente quanto as coberturas que podem ser contratadas e sugerir capitais segurados. Possui validade de 30 dias, contados da data de sua emissão, e não se caracteriza como contratação. Os valores aqui representados são estimados com base nas premissas dos planos vigentes na data deste estudo. Para a contratação do seguro, será necessário preencher a proposta de contratação, e sua aceitação está sujeita à análise de risco.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <button class="btn btn-secondary btn-block icon-button">
+                                baixar pdf da cotação
+                                <i class="fas fa-file-download ml-2"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-sm-12 mt-4">
+                            <button class="btn btn-primary btn-block icon-button">
+                                Emitir Proposta
+                                <i class="fas fa-file-contract ml-2"></i>
+                            </button>
+                        </div>
+                        
+                    </div>
+
+                </div><!--content-page-->
+                
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <!-- Chosen -->
+      <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+      <script src="Assets/plugins/switchery/switchery.js"></script>
+      
+      <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+    <script src="Assets/js/main.js"></script>
+    <script>
+         $(document).ready(function() {
+
+           
+             
+                $('.cpf').mask('000.000.000-00');
+                $('.cnpj').mask('00.000.000/0000-00');
+                $('.percent').mask('##0%', {reverse: true});
+
+                $('.celphones').mask(CelMaskBehavior, spOptions);
+            }); 
+             
+            var CelMaskBehavior = function (val) {
+                return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+            },
+            spOptions = {
+                onKeyPress: function (val, e, field, options) {
+                    field.mask(CelMaskBehavior.apply({}, arguments), options);
+                }
+
+         };
+
+        
+    </script>
+</body>
+</html>

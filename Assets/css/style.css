@@ -1684,6 +1684,12 @@ a.brand-icon-profile:hover{
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  .ticket-container{
     border: 1px solid #bbb9b9;
+    width: 100%;
+ }
+
+ .ticket{
+    width: 100%;
+
  }
  .ticket tr.title{
     background-color: #2b2869!important;
@@ -1709,6 +1715,11 @@ a.brand-icon-profile:hover{
     color: #898989;
     font-size: 15px;
     border-top:none;
+    vertical-align: middle;
+ }
+
+ .ticket tr td.ticket-list{
+    vertical-align: top;
  }
 
  .ticket tr td:last-child{
@@ -1718,8 +1729,65 @@ a.brand-icon-profile:hover{
  .ticket tr.title td{
     color: #fff;
     font-size: 20px;
+    white-space: nowrap;
  }
 
  .ticket tr td.small{
     font-size: 12px;
+ }
+
+.toppings-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+ .toppings-list{
+    margin: 0;
+    list-style: disc;
+    padding: 0 0 0 22px;
+ }
+
+ .toppings-list li{
+    margin-bottom: 12px;
+ }
+
+ .ticket-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+ }
+
+ @media screen and (max-width:1024px){
+    .ticket tr.title td{        
+        white-space: normal;
+     }
+
+     ticket-item{       
+        white-space: normal;
+     }
+
+     .ticket tr td{
+        font-size: 12px;
+        word-break: break-all;
+        white-space: normal;
+       
+     }
+     .ticket tr td.small{
+        font-size: 10px;
+        white-space: nowrap;
+     }
+     .ticket{
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+     }
+ }
+
+ @media screen and (max-width:900px){
+    .ticket tr td{
+        font-size: 10px;
+     }
+     .ticket tr td.small{
+        font-size: 8px;
+     }
  }

@@ -86,7 +86,7 @@ small{
 }
 
 .text-secondary {
-    color: #1AA0E1 !important;
+    color: #00A651     !important;
 }
 
 .text-gray {
@@ -196,6 +196,10 @@ ul{
 
 .w-100{
     width: 100%!important;
+}
+
+.mt-n-5{
+    margin-top: -25px!important;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS BODY BACKGROUND ---------------
@@ -1240,19 +1244,27 @@ a.brand-icon-profile:hover{
 
 
 .container-progressbar{
-    display: block;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
     width:100%;
 }
 
 .progressbar-step{
-    display: block;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width:100%;
     /* counter-reset: step; */
 }
 
 .progressbar-step li{
+    display: flex;
+    justify-content: center;
+    flex: 1;
     list-style: none;
-    float: left;
-    width: 20%;
+    /* float: left; */
+    width: 100%;
     position: relative;
     text-align: center;
     font-size: 10px;
@@ -1755,6 +1767,11 @@ a.brand-icon-profile:hover{
     flex-direction: column;
     width: 100%;
     white-space: nowrap;
+ }
+ .icon-finish{
+    font-size: 28px;
+    margin-bottom: 25px;
+
  }
 
  @media screen and (max-width:1024px){

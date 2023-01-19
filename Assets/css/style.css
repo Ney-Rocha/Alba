@@ -160,6 +160,10 @@ ul{
     padding: 0;
 }
 
+.center{
+    text-align: center!important;
+}
+
 .pull-left {
     float: left !important;
 }
@@ -1833,3 +1837,112 @@ a.brand-icon-profile:hover{
  .dropzone{
     border-radius:13px;
  }
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- lista de apolices ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .dataTables_paginate.paging_simple_numbers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .dataTables_length  select,
+ .dataTables_length  select:focus,
+ .dataTables_length  select:focus-within,
+ .dataTables_filter  input,
+ .dataTables_filter  input:focus,
+ .dataTables_filter  input:focus-within{
+    border: 1px solid #737373!important;
+    outline-offset: 0px!important;
+
+ }
+
+ .dataTables_length label,
+ .dataTables_filter label{
+    font-size: 12px;
+    margin-bottom: 30px;
+ }
+
+ .dataTables_filter  input{
+    margin-left: 10px!important;
+ }
+
+ table.dataTable thead>tr>th.sorting:before, 
+ table.dataTable thead>tr>th.sorting_asc:before,
+ table.dataTable thead>tr>th.sorting:after,
+  table.dataTable thead>tr>th.sorting_asc:after{
+    display: none!important;
+ }
+
+ table.dataTable thead, 
+ table.dataTable thead{
+    background-color:#2B2869;
+    color:#fff
+ }
+
+ table.dataTable thead th, 
+ table.dataTable thead td {
+    font-size: 12px!important;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding: 12px!important;
+}
+
+table.dataTable tbody tr td {
+    font-size: 12px!important;
+    font-weight: 700;
+    color:#898989;
+    padding: 12px!important;
+    border-top: none!important;
+}
+
+table.dataTable tbody tr td a{
+    color:#898989;
+}
+
+table.dataTable tbody tr td a:focus,
+table.dataTable tbody tr td a:hover{
+    color:#737373;
+}
+
+table.dataTable tbody tr.finalizado td a,
+table.dataTable tbody tr.finalizado td {
+    color:#00A651!important;
+}
+
+table.dataTable tbody tr.finalizado td a:focus,
+table.dataTable tbody tr.finalizado td a:hover{
+    color:#01783b!important;
+}
+
+table.dataTable tbody tr.restricao td a,
+table.dataTable tbody tr.restricao td {
+    color:#D61212!important;
+}
+
+table.dataTable tbody tr.resticao td a:focus,
+table.dataTable tbody tr.resticao td a:hover {
+    color:#b31010!important;
+}
+
+
+table .product{
+    width: 77px;
+    padding: 5px;
+    height: 25px;
+    border-radius: 50px;
+    font-size: 10px!important;
+}
+
+.product.product-global{
+    background-color: #292762;
+    color: #BEBBF4;
+}
+
+.product.product-calc{
+    background-color: #DFFAA5;
+    color: #7E9E39;
+}
+

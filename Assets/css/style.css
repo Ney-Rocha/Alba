@@ -1159,6 +1159,10 @@ a.brand-icon-profile:hover{
  .swal2-popup .swal2-styled.swal2-confirm {
     background-color: #2B2869;
  }
+ .swal2-popup .swal2-styled.swal2-confirm:focus,
+ .swal2-styled.swal2-confirm:focus {
+    box-shadow: none;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  -------------  HOME RESTRITA PAGE ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

@@ -181,20 +181,20 @@
                                                                 <p class="strong text-primary">Capital Global Uniforme </p>
                                                             </div>
                                                             <div class="option-content mb-4"> 
-                                                                <label for="colaboradores" class="radio-control">
-                                                                    <input type="radio"  checked class="radio-control" name="tipogrupo" id="colaboradores">
+                                                                <label for="colaboradores1" class="radio-control">
+                                                                    <input type="radio"  checked class="radio-control" name="tipogrupo1" id="colaboradores1">
                                                                     <strong class="nowrap">Colaboradores</strong>                                  
                                                                     <span></span>
                                                                 </label>  
                                     
-                                                                <label for="socios" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupo" id="socios">
+                                                                <label for="socios1" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo1" id="socios1">
                                                                     <strong class="nowrap">Sócios</strong>                                  
                                                                     <span></span>
                                                                 </label>  
                                     
-                                                                <label for="colabSocios" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupo" id="colabSocios">
+                                                                <label for="colabSocios1" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo1" id="colabSocios1">
                                                                     <strong class="nowrap">Colaboradores + Sócios</strong>                                  
                                                                     <span></span>
                                                                 </label>    
@@ -383,20 +383,20 @@
                                                                 <p class="strong text-primary">Capital Global Uniforme </p>
                                                             </div>
                                                             <div class="option-content mb-4"> 
-                                                                <label for="colaboradores" class="radio-control">
-                                                                    <input type="radio"  checked class="radio-control" name="tipogrupo" id="colaboradores">
+                                                                <label for="colaboradores2" class="radio-control">
+                                                                    <input type="radio"  checked class="radio-control" name="tipogrupo2" id="colaboradores2">
                                                                     <strong class="nowrap">Colaboradores</strong>                                  
                                                                     <span></span>
                                                                 </label>  
                                     
-                                                                <label for="socios" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupo" id="socios">
+                                                                <label for="socios2" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo2" id="socios2">
                                                                     <strong class="nowrap">Sócios</strong>                                  
                                                                     <span></span>
                                                                 </label>  
                                     
-                                                                <label for="colabSocios" class="radio-control">
-                                                                    <input type="radio" class="" name="tipogrupo" id="colabSocios">
+                                                                <label for="colabSocios2" class="radio-control">
+                                                                    <input type="radio" class="" name="tipogrupo2" id="colabSocios2">
                                                                     <strong class="nowrap">Colaboradores + Sócios</strong>                                  
                                                                     <span></span>
                                                                 </label>    
@@ -609,25 +609,7 @@
       <script src="Assets/plugins/switchery/switchery.js"></script>
 
     <script src="Assets/js/main.js"></script>
-    <script>
-         $(document).ready(function() {
-
-           //troca de tipo de perfil (uniforme/ Escalonável)
-            $('ul.type-profile li a').click(function(i){
-                $('ul.type-profile li a').removeClass('active');
-                $('.card').removeClass('active');
-                $(this).addClass('active');
-                var id = $(this).data('id');    
-                var content = $('.card').filter(function() { 
-                    return $(this).data("id") == id 
-                });    
-                content.addClass('active');
-            });
-             
-
-         });
-
-        
-    </script>
+    <script src="Assets/js/perfilgrupo.js"></script>
+   
 </body>
 </html>

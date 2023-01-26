@@ -335,6 +335,20 @@ ul{
      border: 1px solid #009849;
  }
 
+ .btn-outline-secondary{
+    background-color: transparent;
+     border: 1px solid #00A651;
+ }
+
+ .btn-outline-secondary:hover,
+ .btn-outline-secondary:focus,
+ .btn-outline-secondary:active,
+ .btn-outline-secondary:not(:disabled):not(.disabled):active {
+     background-color: #00A651;
+     border: 1px solid #00A651;
+ }
+
+
  .btn-gray {
     background-color: #898989;
     border: 1px solid #898989;
@@ -395,6 +409,7 @@ ul{
     transition: all 0.3s;
  }
 
+ 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ------------- HEADERS ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

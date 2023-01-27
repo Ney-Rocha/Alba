@@ -758,9 +758,8 @@ a.brand-icon-profile:hover{
 
 .card-title-button{
     display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .card-title-button button{

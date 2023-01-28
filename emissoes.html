@@ -450,14 +450,14 @@
                         </div>
 
                         <div class="col-sm-12 mt-4">
-                            <a href="statusproposta.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                            <a href="dadosAdicionais.html" class="btn btn-primary btn-block icon-button text-uppercase">
                                 Emitir Proposta
                                 <i class="fas fa-file-contract ml-2 fa-lg"></i>
                             </a>
                         </div>
 
                         <div class="col-sm-4 mt-4">
-                            <a href="dadosAdicionais.html" class="btn btn-gray btn-block ">
+                            <a href="coberturas.html" class="btn btn-gray btn-block ">
                                 <span class="flip fas fa-play mr-2 fa-sm"></span>
                                Etapa Anterior
                                 
@@ -509,29 +509,6 @@
       <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
     <script src="Assets/js/main.js"></script>
-    <script>
-         $(document).ready(function() {
-
-           
-             
-                $('.cpf').mask('000.000.000-00');
-                $('.cnpj').mask('00.000.000/0000-00');
-                $('.percent').mask('##0%', {reverse: true});
-
-                $('.celphones').mask(CelMaskBehavior, spOptions);
-            }); 
-             
-            var CelMaskBehavior = function (val) {
-                return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-            },
-            spOptions = {
-                onKeyPress: function (val, e, field, options) {
-                    field.mask(CelMaskBehavior.apply({}, arguments), options);
-                }
-
-         };
-
-        
-    </script>
+    <script src="Assets/js/emissoes.js"></script>
 </body>
 </html>

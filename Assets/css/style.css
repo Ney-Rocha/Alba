@@ -1060,6 +1060,11 @@ a.brand-icon-profile:hover{
     box-shadow: none;
 }
 
+.form-control:disabled{
+    cursor:not-allowed;
+    background-color: rgba(236, 236, 236, 0.3);
+}
+
 .form-group.group-danger .form-control{
     color:#FF0000;
 }

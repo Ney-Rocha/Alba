@@ -126,252 +126,431 @@
                         <div class="container-progressbar">
                             <ul class="progressbar-step">
                                 <li class="active">Dados do Cliente</li>
-                                <li> Perfil do grupo</li>
-                                <li>Coberturas e assistências</li>
-                                <li>cotação</li>
+                                <li class="active"> Perfil do grupo</li>
+                                <li class="active">Coberturas e assistências</li>
+                                <li class="active">cotação</li>
                                 <li>Proposta</li>
                             </ul><!---progressbar-step-->
                         </div>   <!--container-progressbar-step-->
                     </div><!--header-content-page-->
 
-                    <div class="title-content">
-                        <h2>Informe os dados do cliente</h2>
+                    <div class="title-content mb-2">
+                        <h2 >Dados adicionais da Proposta</h2>                       
                     </div>
+                    <p class="mb-4"> Preencha os dados adicionais</p>
 
-                    <div class="option-container">
-                        
-                        <div class="option-content"> 
-                            <label for="novoSeguro" class="radio-control">
-                                <input type="radio"  checked class="radio-control" name="typesecurity" id="novoSeguro">
-                                <strong class="nowrap">Novo Seguro</strong>                                  
-                                <span></span>
-                            </label>  
-
-                            <label for="newAlba" class="radio-control">
-                                <input type="radio" class="" name="typesecurity" id="newAlba">
-                                <strong class="nowrap">Renovação Alba</strong>                                  
-                                <span></span>
-                            </label>  
-
-                            <label for="newCongenere" class="radio-control">
-                                <input type="radio" class="" name="typesecurity" id="newCongenere">
-                                <strong class="nowrap">Seguro em Congênere</strong>                                  
-                                <span></span>
-                            </label>    
-                        </div><!--option-content-->
-                        
-                        <div class="option-content-add" id="">
-                            <label class="label-inline nowrap">Escolha a seguradora:</label>
-                            <select id="seguradora"class="chosen-select col-8"  tabindex="1">
-                                <option value="0">Selecione a Seguradora</option>
-                                <option value="1">Seguradora A</option>
-                                <option value="2">Seguradora B</option>
-                                <option value="3">Seguradora C</option>
-                                <option value="4">Seguradora D</option>
-                                <option value="5">Seguradora E</option>
-                                <option value="6">Seguradora F</option>
-                                <option value="7">Seguradora G</option>
-                                <option value="8">Seguradora H</option>
-                                <option value="9">Seguradora I</option>
-                                <option value="10">Seguradora J</option>
-                                <option value="11">Seguradora L</option>
-                                <option value="12">Seguradora M</option>
-                                <option value="13">Seguradora N</option>
-                            </select>                            
-                        </div><!--option-content-add-->
-                    </div><!--option-container-->
+                   
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body p-5 ph-n">
                            
 
-                           <div class="mt-3">
-                                <form action="#">
-                                    <div class="card-title">
-                                        <h4>Estipulante</h4>
-        
-                                        
-                                    </div><!--card-title-->
+                           <div class="mt-4 mb-4">
+                               
+                                <div class="card-title">
+                                    <h4 class="text-primary mb-4">Confirmação de endereço de cadastro</h4>
+    
+                                    <div class="form-description mb-4">
+                                        <p class="strong text-primary">Dados do estipulante</p>
+                                    </div>
+                                </div><!--card-title-->
 
-                                    <div class="estipulante-add mt-3">
+                                <div class="estipulante-conf mt-3">
+                                
+                                    <div class="row">
+                                        <div class="col-lg-4">
+    
+                                            <div class="form-group">
+                                                <label for="cnpjEstConf" class="control-label label-strong label-primary">CNPJ*</label>
+                                                <input type="text" disabled value="41.618.079/001-04"  id="cnpjEstConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
                                     
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="razaoSocConf" class="control-label label-strong label-primary">Razão Social</label>
+                                                <input type="text" value="XPTO LTDA" disabled id="razaoSocConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="segEstConf"   class="control-label label-strong label-primary">Segmento</label>
+                                                <input type="text" value="INDÚSTRIA" disabled id="segEstConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col--> 
+                                    </div><!--row-->   
+                                    
+                                    <div class="row mt-3">
+                                        <div class="col-lg-5">
+    
+                                            <div class="form-group">
+                                                <label for="endConf" class="control-label label-strong label-primary">Endereço</label>
+                                                <input type="text" disabled value="Rua João Martins"  id="endConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-2">
+                                            <div class="form-group">
+                                                <label for="nConf" class="control-label label-strong label-primary">Número</label>
+                                                <input type="text" value="10" disabled id="nConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="compConf"   class="control-label label-strong label-primary">Complemento</label>
+                                                <input type="text" value="INDÚSTRIA" disabled id="compConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    </div><!--row-->   
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-2">
+    
+                                            <div class="form-group">
+                                                <label for="ufConf" class="control-label label-strong label-primary">UF</label>
+                                                <input type="text" disabled value="SP"  id="ufConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="cityConf" class="control-label label-strong label-primary">Cidade</label>
+                                                <input type="text" value="São Paulo" disabled id="cityConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="cepConf"   class="control-label label-strong label-primary">CEP</label>
+                                                <input type="text" value="00000-000" disabled id="cepConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    </div><!--row-->  
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-3">
+    
+                                            <div class="form-group">
+                                                <label for="telConf" class="control-label label-strong label-primary">Celular</label>
+                                                <input type="text" disabled value="(11) 992332-3221"  id="telConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                                <label for="emailcityConf" class="control-label label-strong label-primary">Email</label>
+                                                <input type="text" value="xpto@xptoltda.com.br" disabled id="emailcityConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                                                                    
+                                    </div><!--row--> 
+                                </div><!--estipulante-->
+
+                               
+                                <div class="estipulante-data-add">
+                                    <div class="card-title mt-4">
+                                        <h4 class="text-primary mb-4">O endereço de cadastro, é o mesmo endereço de correspondência?</h4>
+                                    </div>
+                                </div>
+
+                                <div class="option-container">
+                    
+                                    <div class="option-content"> 
+                                        <label for="data-yes" class="radio-control">
+                                            <input type="radio" value="data-yes" checked  name="cadEdit" id="data-yes">
+                                            <strong class="nowrap">Sim</strong>                                  
+                                            <span></span>
+                                        </label>  
+            
+                                        <label for="data-no" class="radio-control">
+                                            <input type="radio" value="data-no"  name="cadEdit" id="data-no">
+                                            <strong class="nowrap">Nao</strong>                                  
+                                            <span></span>
+                                        </label>  
+                                    </div>
+                                </div>
+
+                                <form action="#">
+                                    <div id="add-data" class=" hide estipulante-data-add mt-3">
+                                        
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-4">
         
                                                 <div class="form-group">
-                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" value="41.618.079/001-04"  id="cnpjEstipulante" class="form-control" required>
+                                                    <label for="cnpjEstAdd" class="control-label label-strong label-primary">CNPJ*</label>
+                                                    <input type="text" required  id="cnpjEstAdd" class="form-control">
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
                                         
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
-                                                    <input type="text" value="XPTO LTDA"  id="razaoSocialEstipulante" class="form-control" required>
+                                                    <label for="razaoSocAdd" class="control-label label-strong label-primary">Razão Social</label>
+                                                    <input type="text"  required id="razaoSocAdd" class="form-control">
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
         
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="segAtividadeEstipulante"   class="control-label label-strong label-primary">Segmento/Atividade:</label>
-                                                    <input type="text" value="INDÚSTRIA" id="segAtividadeEstipulante" class="form-control" required>
+                                                    <label for="segEstAdd"   class="control-label label-strong label-primary">Segmento</label>
+                                                    <input type="text" required id="segEstAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col--> 
+                                        </div><!--row-->   
+                                        
+                                        <div class="row mt-3">
+                                            <div class="col-lg-5">
+        
+                                                <div class="form-group">
+                                                    <label for="endAdd" class="control-label label-strong label-primary">Endereço</label>
+                                                    <input type="text" required  id="endAdd" class="form-control">
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
+                                        
+                                            <div class="col-lg-2">
+                                                <div class="form-group">
+                                                    <label for="nAdd" class="control-label label-strong label-primary">Número</label>
+                                                    <input type="text" required id="nAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="compAdd"   class="control-label label-strong label-primary">Complemento</label>
+                                                    <input type="text"  id="compAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->   
+    
+                                        <div class="row mt-3">
+                                            <div class="col-lg-2">
+        
+                                                <div class="form-group">
+                                                    <label for="ufAdd" class="control-label label-strong label-primary">UF</label>
+                                                    <select name="" id="ufAdd" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                        <option value="AM">AM</option>
+                                                        <option value="BA">BA</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="DF">DF</option>
+                                                        <option value="ES">ES</option>
+                                                        <option value="GO">GO</option>
+                                                        <option value="MA">MA</option>
+                                                        <option value="MS">MS</option>
+                                                        <option value="MT">MT</option>
+                                                        <option value="MG">MG</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PB">PB</option>
+                                                        <option value="PR">PR</option>
+                                                        <option value="PE">PE</option>
+                                                        <option value="PI">PI</option>
+                                                        <option value="RJ">RJ</option>
+                                                        <option value="RN">RN</option>
+                                                        <option value="RS">RS</option>
+                                                        <option value="RO">RO</option>
+                                                        <option value="RR">RR</option>
+                                                        <option value="SC">SC</option>
+                                                        <option value="SP">SP</option>
+                                                        <option value="SE">SE</option>
+                                                        <option value="TO">TO</option>
+                                                    </select>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="cityAdd" class="control-label label-strong label-primary">Cidade</label>
+                                                    <input type="text" required id="cityAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="cepAdd"   class="control-label label-strong label-primary">CEP</label>
+                                                    <input type="text" required id="cepAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->  
+    
+                                        <div class="row mt-3">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-group">
+                                                    <label for="telAdd" class="control-label label-strong label-primary">Celular</label>
+                                                    <input type="text"  id="telAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-5">
+                                                <div class="form-group">
+                                                    <label for="emailcityAdd" class="control-label label-strong label-primary">Email</label>
+                                                    <input type="text" id="emailcityAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                                                                        
+                                        </div><!--row--> 
+                                    </div> <!-- estipulante-data-add-->
 
+                                    <div>
+                                        <div class="row">
                                             <div class="col-md-12">
-                                                <div class="card-title-button mt-2 mr-2">
-                                                    <button type="reset">
-                                                        <div class="text-warning mr-2">
-                                                            <i class="fas fa-eraser"></i>
-                                                        </div>
-                                                        Limpar
-                                                    </button>                                        
-                                                </div><!--card-title-button-->
-                                            </div><!--col-12-->
-                                        </div><!--row-->                                        
+                                                <div class="estipulante-data-add">
+                                                    <div class="card-title mt-4">
+                                                        <h4 class="text-primary mb-4">Dados de Contrato</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <p class="text-primary strong mt-2">
+                                                    Início de vigência de contrato:
+                                                </p>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="" id="initVigencia" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                    </select>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <p class="text-primary strong mt-2">
+                                                    Data da Contratação:
+                                                </p>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="" id="initVigencia" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                    </select>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <p class="text-primary strong mt-2">
+                                                    Forma de pagamento:
+                                                </p>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="" id="initVigencia" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                    </select>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <p class="text-primary strong mt-2">
+                                                   Data de Vencimento:
+                                                </p>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select name="" id="initVigencia" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                    </select>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!-- row -->
+
                                     </div><!--estipulante-->
                                 </form><!--form-->
                            </div><!--mt-->
 
                             
-                           <div class="mt-3">
-                                <form action="#">
-                                
-                                    <div class="card-title">
-                                        <h4>Subestipulante 1</h4>
-                                    </div><!--card-title-->
-    
-                                    <div class="estipulante-add mt-3">                                    
-                                        <div class="row">
-                                            <div class="col-lg-3">
-        
-                                                <div class="form-group group-danger">
-                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" id="cnpjEstipulante" value="41.618.079/001-04"  class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                            
-                                            <div class="col-lg-3">
-                                                <div class="form-group  group-danger">
-                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
-                                                    <input type="text" id="razaoSocialEstipulante" value="XPTO LTDA" class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-        
-                                            <div class="col-lg-6">
-                                                <div class="form-group  group-danger">
-                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento/Atividade:</label>
-                                                    <input type="text" value="INDÚSTRIA" id="segAtividadeEstipulante" value="INDÚSTRIA" class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-
-                                            <div class="col-md-12">
-                                                <div class="card-title-button mt-2 mr-2">
-                                                    <button type="reset">
-                                                        <div class="text-warning mr-2">
-                                                            <i class="fas fa-eraser"></i>
-                                                        </div>
-                                                        Limpar
-                                                    </button>
-                                                    <button type="button">
-                                                        <div class="text-danger mr-2">
-                                                            <i class="fas fa-trash-alt"></i>
-                                                        </div>
-                                                        excluir
-                                                    </button>
-                                                </div><!--card-title-button-->
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                    </div><!--estipulante-->
-                                </form> <!--form-->
-                           </div><!--mt-->
-
-                           <div class="mt-3">
-                                <form action="#">
-                                
-                                    <div class="card-title">
-                                        <h4>Subestipulante 2</h4>
-                                    </div><!--card-title-->
-
-                                    <div class="estipulante-add mt-3">                                    
-                                        <div class="row">
-                                            <div class="col-lg-3">
-        
-                                                <div class="form-grou">
-                                                    <label for="cnpjEstipulante"  class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" value="41.618.079/001-04" id="cnpjEstipulante" class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                            
-                                            <div class="col-lg-3">
-                                                <div class="form-group">
-                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
-                                                    <input type="text"  value="XPTO LTDA" id="razaoSocialEstipulante" class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-        
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento/Atividade:</label>
-                                                    <input type="text"  value="INDÚSTRIA" id="segAtividadeEstipulante" class="form-control" required>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-
-                                            <div class="col-md-12">
-                                                <div class="card-title-button mt-2 mr-2">
-                                                    <button type="reset">
-                                                        <div class="text-warning mr-2">
-                                                            <i class="fas fa-eraser"></i>
-                                                        </div>
-                                                        Limpar
-                                                    </button>
-                                                    <button type="button">
-                                                        <div class="text-danger mr-2">
-                                                            <i class="fas fa-trash-alt"></i>
-                                                        </div>
-                                                        excluir
-                                                    </button>
-                                                </div><!--car-title-button-->
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                    </div><!--estipulante-->
-                                </form> 
-                            </div>
-                           
-                            <div class="row mt-4 mb-4">
-                                <div class="col-lg-12 ">
-                                    <div class="form-group mt-4">
-                                        <button class="pull-right btn btn-outline-primary btn-icon">
-                                            Adicionar Subestipulante
-                                            <div class="icon-button ml-2">
-
-
-                                            </div>
-                                        </button>
-                                    </div><!--form-group-->                                       
-                                </div><!--col-->
-                            </div><!--row-->
+                          
                         </div>
                     </div><!--card-->
 
                     <div class="row mt-5">
-                        <div class="col-md-12 mb-5">
-                            <a href="perfilgrupo.html" class="pull-right btn btn-secondary btn-icon">
+                        <!-- <div class="col-md-4 offset-8 mb-5">
+                            <a href="statusproposta.html" class="btn btn-block btn-secondary btn-icon">
                                 Próxima etapa
                                 <div class="icon-button ml-2">
                                     <i class="fa fa-play"></i>
                                 </div>
                             </a>
-                        </div><!--col-->
+                        </div> -->
+                        <div class="col-sm-12 mt-4">
+                            <a href="statusproposta.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                                Assinatura Digital
+                                <i class="fas fa-file-contract ml-2 fa-lg"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-3 mt-4">
+                            <a href="coberturas.html" class="btn btn-gray btn-block ">
+                                <span class="flip fas fa-play mr-2 fa-sm"></span>
+                               Etapa Anterior
+                                
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por SMS
+                                <span class="fas fa-sms ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-3 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por E-mail
+                                <span class="fas fa-envelope-square ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-3  mt-4">
+                            <button class="btn btn-outline-secondary btn-block icon-button">
+                                Assinatura Física
+                                <span class="fas fa-file-signature ml-2 "></span>
+                            </button>
+                        </div>
                     </div><!--row-->
                 </div><!--content-page-->
                 
@@ -397,26 +576,31 @@
     <!-- Sweetalert -->
     <script src="Assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
 
+    <!-- main -->
     <script src="Assets/js/main.js"></script>
+    
+
     <script>
-       $(document).ready(function() {
+        $(document).ready( function(){
+
+            
            
-            Swal.fire({
-                title: '<h3 class="text-danger text-uppercase">Atenção!</h3>',
-                html: '<p> O subestipulante de número <span> 2 </span>, <strong> CNPJ <span>41.618.079/0001-04</span> </strong> está com restrição. Para continuar, exclua o estipulante ou mude o CNPJ.</p>',
-                imageUrl: '../Assets/img/icons/Error.png',
-                imageHeight:80,
-                imagewidht:80,
-                imageAlt: 'A tall image',
-                allowOutsideClick: false,
-                allowEscapeKey: false
+
+            $('input[type="radio"][name="cadEdit"]').on('change', function(){
+                var editCadastro = $('input[name="cadEdit"]:checked').val();
+                if(editCadastro == 'data-yes'){
+                    $('#add-data').addClass('hide')
+                    $('#add-data .form-control').each(function (index){
+                        ($(this).val(" "))
+                    })
+                } else if (editCadastro == 'data-no'){
+                    $('#add-data').removeClass('hide')
+                    
+                } 
             })
 
            
-        });
-
-
-       
+        })
     </script>
 </body>
 </html>

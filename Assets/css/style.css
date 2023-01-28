@@ -858,6 +858,7 @@ a.brand-icon-profile:hover{
     padding-left: 30px;
     vertical-align: middle;
     color:#D9D9D9;
+    cursor: pointer;
 }
 
 
@@ -2052,6 +2053,10 @@ table#tableApolices.dataTable tbody::after{
     }
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- Animate ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .animate__animated{
-    animation-duration: .4s;
+    animation-duration: .25s;
 }

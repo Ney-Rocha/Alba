@@ -8,7 +8,7 @@ $(document).ready(function(){
             imageUrl: '../Assets/img/icons/Error.png',
             imageHeight:80,
             imagewidht:80,
-            imageAlt: 'A tall image',
+            imageAlt: 'Exclamação de alerta!',
             allowOutsideClick: false,
             allowEscapeKey: false
         })

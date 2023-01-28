@@ -2051,3 +2051,7 @@ table#tableApolices.dataTable tbody::after{
 
     }
 }
+
+.animate__animated{
+    animation-duration: .4s;
+}

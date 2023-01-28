@@ -20,7 +20,8 @@
     <!--Sweetalert-->
     <link rel="stylesheet" href="Assets/plugins/sweetalert2/sweetalert2.min.css">
 
-
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Styleshhet - Main-->
     <link rel="stylesheet" href="Assets/css/style.css">
 
@@ -284,137 +285,138 @@
                                 </div>
 
                                 <form action="#">
-                                    <div id="add-data" class=" hide estipulante-data-add mt-3">
-                                        
-                                        <div class="row">
-                                            <div class="col-lg-4">
+                                    <div id="add-data" class="hide estipulante-data-add animate__animated mt-3">
+                                        <div id="add-fields">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+            
+                                                    <div class="form-group">
+                                                        <label for="cnpjEstAdd" class="control-label label-strong label-primary">CNPJ*</label>
+                                                        <input type="text" required  id="cnpjEstAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="razaoSocAdd" class="control-label label-strong label-primary">Razão Social</label>
+                                                        <input type="text"  required id="razaoSocAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+            
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="segEstAdd"   class="control-label label-strong label-primary">Segmento</label>
+                                                        <input type="text" required id="segEstAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col--> 
+                                            </div><!--row-->   
+                                            
+                                            <div class="row mt-3">
+                                                <div class="col-lg-5">
+            
+                                                    <div class="form-group">
+                                                        <label for="endAdd" class="control-label label-strong label-primary">Endereço</label>
+                                                        <input type="text" required  id="endAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="nAdd" class="control-label label-strong label-primary">Número</label>
+                                                        <input type="text" required id="nAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+            
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label for="compAdd"   class="control-label label-strong label-primary">Complemento</label>
+                                                        <input type="text"  id="compAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            </div><!--row-->   
         
-                                                <div class="form-group">
-                                                    <label for="cnpjEstAdd" class="control-label label-strong label-primary">CNPJ*</label>
-                                                    <input type="text" required  id="cnpjEstAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label for="razaoSocAdd" class="control-label label-strong label-primary">Razão Social</label>
-                                                    <input type="text"  required id="razaoSocAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
+                                            <div class="row mt-3">
+                                                <div class="col-lg-2">
+            
+                                                    <div class="form-group">
+                                                        <label for="ufAdd" class="control-label label-strong label-primary">UF</label>
+                                                        <select name="" id="ufAdd" class="form-control">
+                                                            <option value=""></option>
+                                                            <option value="AC">AC</option>
+                                                            <option value="AL">AL</option>
+                                                            <option value="AP">AP</option>
+                                                            <option value="AM">AM</option>
+                                                            <option value="BA">BA</option>
+                                                            <option value="CE">CE</option>
+                                                            <option value="DF">DF</option>
+                                                            <option value="ES">ES</option>
+                                                            <option value="GO">GO</option>
+                                                            <option value="MA">MA</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MT">MT</option>
+                                                            <option value="MG">MG</option>
+                                                            <option value="PA">PA</option>
+                                                            <option value="PB">PB</option>
+                                                            <option value="PR">PR</option>
+                                                            <option value="PE">PE</option>
+                                                            <option value="PI">PI</option>
+                                                            <option value="RJ">RJ</option>
+                                                            <option value="RN">RN</option>
+                                                            <option value="RS">RS</option>
+                                                            <option value="RO">RO</option>
+                                                            <option value="RR">RR</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="SP">SP</option>
+                                                            <option value="SE">SE</option>
+                                                            <option value="TO">TO</option>
+                                                        </select>
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="cityAdd" class="control-label label-strong label-primary">Cidade</label>
+                                                        <input type="text" required id="cityAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+            
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label for="cepAdd"   class="control-label label-strong label-primary">CEP</label>
+                                                        <input type="text" required id="cepAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            </div><!--row-->  
         
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label for="segEstAdd"   class="control-label label-strong label-primary">Segmento</label>
-                                                    <input type="text" required id="segEstAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col--> 
-                                        </div><!--row-->   
-                                        
-                                        <div class="row mt-3">
-                                            <div class="col-lg-5">
-        
-                                                <div class="form-group">
-                                                    <label for="endAdd" class="control-label label-strong label-primary">Endereço</label>
-                                                    <input type="text" required  id="endAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        
-                                            <div class="col-lg-2">
-                                                <div class="form-group">
-                                                    <label for="nAdd" class="control-label label-strong label-primary">Número</label>
-                                                    <input type="text" required id="nAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-        
-                                            <div class="col-lg-3">
-                                                <div class="form-group">
-                                                    <label for="compAdd"   class="control-label label-strong label-primary">Complemento</label>
-                                                    <input type="text"  id="compAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        </div><!--row-->   
-    
-                                        <div class="row mt-3">
-                                            <div class="col-lg-2">
-        
-                                                <div class="form-group">
-                                                    <label for="ufAdd" class="control-label label-strong label-primary">UF</label>
-                                                    <select name="" id="ufAdd" class="form-control">
-                                                        <option value=""></option>
-                                                        <option value="AC">AC</option>
-                                                        <option value="AL">AL</option>
-                                                        <option value="AP">AP</option>
-                                                        <option value="AM">AM</option>
-                                                        <option value="BA">BA</option>
-                                                        <option value="CE">CE</option>
-                                                        <option value="DF">DF</option>
-                                                        <option value="ES">ES</option>
-                                                        <option value="GO">GO</option>
-                                                        <option value="MA">MA</option>
-                                                        <option value="MS">MS</option>
-                                                        <option value="MT">MT</option>
-                                                        <option value="MG">MG</option>
-                                                        <option value="PA">PA</option>
-                                                        <option value="PB">PB</option>
-                                                        <option value="PR">PR</option>
-                                                        <option value="PE">PE</option>
-                                                        <option value="PI">PI</option>
-                                                        <option value="RJ">RJ</option>
-                                                        <option value="RN">RN</option>
-                                                        <option value="RS">RS</option>
-                                                        <option value="RO">RO</option>
-                                                        <option value="RR">RR</option>
-                                                        <option value="SC">SC</option>
-                                                        <option value="SP">SP</option>
-                                                        <option value="SE">SE</option>
-                                                        <option value="TO">TO</option>
-                                                    </select>
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label for="cityAdd" class="control-label label-strong label-primary">Cidade</label>
-                                                    <input type="text" required id="cityAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-        
-                                            <div class="col-lg-3">
-                                                <div class="form-group">
-                                                    <label for="cepAdd"   class="control-label label-strong label-primary">CEP</label>
-                                                    <input type="text" required id="cepAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        </div><!--row-->  
-    
-                                        <div class="row mt-3">
-                                            <div class="col-lg-3">
-        
-                                                <div class="form-group">
-                                                    <label for="telAdd" class="control-label label-strong label-primary">Celular</label>
-                                                    <input type="text"  id="telAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                        
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label for="emailcityAdd" class="control-label label-strong label-primary">Email</label>
-                                                    <input type="text" id="emailcityAdd" class="form-control">
-                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
-                                                </div><!--form-group-->
-                                            </div><!--col-->
-                                                                                        
-                                        </div><!--row--> 
+                                            <div class="row mt-3">
+                                                <div class="col-lg-3">
+            
+                                                    <div class="form-group">
+                                                        <label for="telAdd" class="control-label label-strong label-primary">Celular</label>
+                                                        <input type="text"  id="telAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                            
+                                                <div class="col-lg-5">
+                                                    <div class="form-group">
+                                                        <label for="emailcityAdd" class="control-label label-strong label-primary">Email</label>
+                                                        <input type="text" id="emailcityAdd" class="form-control">
+                                                        <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                    </div><!--form-group-->
+                                                </div><!--col-->
+                                                                                            
+                                            </div><!--row--> 
+                                        </div>
                                     </div> <!-- estipulante-data-add-->
 
                                     <div>
@@ -589,13 +591,14 @@
             $('input[type="radio"][name="cadEdit"]').on('change', function(){
                 var editCadastro = $('input[name="cadEdit"]:checked').val();
                 if(editCadastro == 'data-yes'){
-                    $('#add-data').addClass('hide')
+                    $('#add-data').removeClass('animate__fadeInUp')
+                    $('#add-data').addClass('hide')                     
                     $('#add-data .form-control').each(function (index){
                         ($(this).val(" "))
                     })
-                } else if (editCadastro == 'data-no'){
+                } else if (editCadastro == 'data-no'){  
                     $('#add-data').removeClass('hide')
-                    
+                    $('#add-data').addClass('animate__fadeInUp')
                 } 
             })
 

@@ -813,6 +813,7 @@ a.brand-icon-profile:hover{
     position: relative;
     padding-left: 30px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 

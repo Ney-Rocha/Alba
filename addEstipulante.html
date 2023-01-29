@@ -20,6 +20,9 @@
     <!--Sweetalert-->
     <link rel="stylesheet" href="Assets/plugins/sweetalert2/sweetalert2.min.css">
 
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
     <!--Styleshhet - Main-->
     <link rel="stylesheet" href="Assets/css/style.css">
@@ -142,27 +145,27 @@
                         
                         <div class="option-content"> 
                             <label for="novoSeguro" class="radio-control">
-                                <input type="radio"  checked class="radio-control" name="typesecurity" id="novoSeguro">
+                                <input type="radio" value="novoSeguro" checked class="radio-control" name="typesecurity" id="novoSeguro">
                                 <strong class="nowrap">Novo Seguro</strong>                                  
                                 <span></span>
                             </label>  
 
                             <label for="newAlba" class="radio-control">
-                                <input type="radio" class="" name="typesecurity" id="newAlba">
+                                <input type="radio" value="renovAlba" class="" name="typesecurity" id="newAlba">
                                 <strong class="nowrap">Renovação Alba</strong>                                  
                                 <span></span>
                             </label>  
 
                             <label for="newCongenere" class="radio-control">
-                                <input type="radio" class="" name="typesecurity" id="newCongenere">
+                                <input type="radio" value="newCongenere" name="typesecurity" id="newCongenere">
                                 <strong class="nowrap">Seguro em Congênere</strong>                                  
                                 <span></span>
                             </label>    
                         </div><!--option-content-->
                         
-                        <div class="option-content-add" id="">
+                        <div class="option-content-add animate__animated hide" id="selectCongenere">
                             <label class="label-inline nowrap">Escolha a seguradora:</label>
-                            <select id="seguradora"class="chosen-select col-8"  tabindex="1">
+                            <select id="seguradora"class="chosen-select col-7"  tabindex="1">
                                 <option value="0">Selecione a Seguradora</option>
                                 <option value="1">Seguradora A</option>
                                 <option value="2">Seguradora B</option>
@@ -200,7 +203,7 @@
         
                                                 <div class="form-group">
                                                     <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" value="41.618.079/001-04"  id="cnpjEstipulante" class="form-control" required>
+                                                    <input type="text" value="4161807900104"  id="cnpjEstipulante" class="form-control cnpj" required>
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
@@ -250,7 +253,7 @@
         
                                                 <div class="form-group group-danger">
                                                     <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" id="cnpjEstipulante" value="41.618.079/001-04"  class="form-control" required>
+                                                    <input type="text" id="cnpjEstipulante" value="4161807900104"  class="form-control cnpj" required>
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
@@ -305,15 +308,15 @@
         
                                                 <div class="form-grou">
                                                     <label for="cnpjEstipulante"  class="control-label label-strong label-primary">CNPJ</label>
-                                                    <input type="text" value="41.618.079/001-04" id="cnpjEstipulante" class="form-control" required>
+                                                    <input type="text" value="4161807900104" id="cnpjEstipulante" class="form-control cnpj" required>
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
                                             
                                             <div class="col-lg-3">
                                                 <div class="form-group">
-                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
-                                                    <input type="text"  value="XPTO LTDA" id="razaoSocialEstipulante" class="form-control" required>
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary"> Razão Social:</label>
+                                                    <input type="text"  value="XPTO LTDA" id="razaoSocialEstipulante" class="form-control " required>
                                                     <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
                                                 </div><!--form-group-->
                                             </div><!--col-->
@@ -397,8 +400,14 @@
     <!-- Sweetalert -->
     <script src="Assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
 
+     <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+
+
     <!-- script page -->
     <script src="Assets/js/main.js"></script>    
     <script src="Assets/js/addEstipulante.js"></script>
+
+    
 </body>
 </html>

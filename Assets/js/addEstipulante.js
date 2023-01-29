@@ -14,5 +14,17 @@ $(document).ready(function(){
         })
        
     });
+
+    // on / off select congenere
+    $('input[type="radio"][name="typesecurity"]').on('change', function(){
+        var typeSecurity = $('input[name="typesecurity"]:checked').val()
+        if ( typeSecurity == 'newCongenere'){
+            $('#selectCongenere').removeClass('hide')
+            $('#selectCongenere').addClass('animate__fadeInRight')
+        } else {
+            $('#selectCongenere').addClass('hide')
+            $('#selectCongenere').removeClass('animate__fadeInRight')
+        }
+    })
      
 });

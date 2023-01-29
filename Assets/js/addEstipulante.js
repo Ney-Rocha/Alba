@@ -7,7 +7,7 @@ $(document).ready(function(){
             html: '<p> O subestipulante de número <span> 2 </span>, <strong> CNPJ <span>41.618.079/0001-04</span> </strong> está com restrição. Para continuar, exclua o estipulante ou mude o CNPJ.</p>',
             imageUrl: '../Assets/img/icons/Error.png',
             imageHeight:80,
-            imagewidht:80,
+            imageWidth:80,
             imageAlt: 'Exclamação de alerta!',
             allowOutsideClick: false,
             allowEscapeKey: false
@@ -27,4 +27,30 @@ $(document).ready(function(){
         }
     })
      
+     //  chosen plugin
+     $(".chosen-select").chosen({
+            disable_search_threshold: 2,
+            width: "95%"
+
+    });
+
+      // mask
+    $('.cpf').mask('000.000.000-00');
+    $('.cnpj').mask('00.000.000/0000-00');
+    $('.percent').mask('##0%', {reverse: true});
+    $('.celphones').mask(CelMaskBehavior, spOptions);
+    $('.cep').mask('00000-000');
+    $('.date').mask('00/00/0000');
+
 });
+
+//   MASk
+var CelMaskBehavior = function (val) {
+    return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+},
+spOptions = {
+    onKeyPress: function (val, e, field, options) {
+        field.mask(CelMaskBehavior.apply({}, arguments), options);
+    }
+
+};

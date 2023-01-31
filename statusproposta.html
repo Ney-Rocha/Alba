@@ -14,6 +14,7 @@
 
        <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
 
     <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
@@ -119,7 +120,7 @@
                 <div class="content-page">
 
                     <div class="header-content-page">
-                        <a href="apolices.html" class="btn btn-rewind">
+                        <a href="javascript:history.go(-1)" class="btn btn-rewind">
                             <i class="fas fa-angle-left"></i>
                         </a>
                         <div class="container-progressbar">
@@ -146,8 +147,9 @@
                                     <div class="container-progressbar">
                                         <ul class="progressbar-step">
                                             <li class="active">Proposta emitida</li>
-                                            <li class="">Assinatura</li>                                    
-                                            <li>Upload de documentos</li>
+                                            <li class="active">Upload de documentos</li>                                    
+                                            <li>Assinatura digital</li>
+                                            <!-- <li>Assinatura física</li> -->
                                             <li>Encaminhada para análise</li>
                                             <li>Protocolo finalizado</li>
                                         </ul><!---progressbar-step-->
@@ -190,23 +192,39 @@
                             </div>
                             
                         </div><!--card body-->
-                        <div class="row mt-4">
+                        <div class="row p-4 ph-n mb-5">
+                            <div class="col-md-12  text-center mb-4">
+                                <p>
+                                    Para anexar um documento <strong>adicional</strong>  <a href="#" class="strong text-primary">Clique aqui</a>
+                                </p>                                
+                            </div>
                             <div class="col-md-12">
-                                <div class="p-5 ph-n mb-4">
-                                    <a href="#" class="btn btn-block btn-secondary btn-icon">
+                                <div class="">
+                                    <a href="#" class="btn btn-block btn-outline-secondary btn-icon">
                                         Reenviar proposta por email 
                                         <i class="fas fa-envelope fa-lg ml-3"></i>
                                     </a>
-                                    <a href="#" class="btn btn-block btn-primary btn-icon mt-3">
-                                        Baixar PDF da proposta 
-                                        <i class="fas fa-download fa-lg ml-3"></i>
+                                </div>
+                            </div><!--col-->
+                            <div class=" col-md-12">
+                                <a href="#" class="btn btn-block btn-outline-primary btn-icon mt-3">
+                                    Baixar PDF da proposta 
+                                    <i class="fas fa-download fa-lg ml-3"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="">
+                                    <a href="index.html" class="btn btn-block btn-secondary btn-icon">
+                                        Nova Cotação 
+                                        <i class="fas fa-file-alt fa-lg ml-3"></i>
                                     </a>
                                 </div>
                             </div><!--col-->
-                            <div class="col-md-12  text-center mb-5">
-                                <p>
-                                    Para anexar um documento <a href="#" class="text-primary">Clique aqui</a>
-                                </p>                                
+                            <div class=" col-md-4 offset-sm-4">
+                                <a href="apolices.html" class="btn btn-block btn-primary btn-icon mt-3">
+                                    Minhas cotações
+                                    <i class="fas fa-folder fa-lg ml-3"></i>
+                                </a>
                             </div>
                         </div><!--row-->
                         
@@ -215,6 +233,7 @@
                 </div><!--content-page-->
                 
             </div><!--Main-->
+
 
             <div class="footer">
                 <div class="brand-footer">

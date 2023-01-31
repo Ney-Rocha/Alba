@@ -274,7 +274,7 @@ ul{
     font-size: 12px;
     font-weight: 700;
     line-height: 1.2;
-    max-height: 42px;
+    /* max-height: 42px; */
     padding: 13px 40px;
 }
 
@@ -1492,6 +1492,18 @@ a.brand-icon-profile:hover{
 
 .content-profile.active{
     display: block;
+}
+
+@media screen and (max-width:600px){
+    .tag-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tag {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width:425px){

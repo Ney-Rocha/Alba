@@ -1793,9 +1793,13 @@ a.brand-icon-profile:hover{
     list-style: disc;
     padding: 0 0 0 22px;
  }
-
+ 
  .toppings-list li{
     margin-bottom: 12px;
+ }
+
+ .list-mb-1.toppings-list li{
+    margin-bottom: 5px;
  }
 
  .ticket-item{

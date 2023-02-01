@@ -43,6 +43,11 @@
     border: none;
     width: 100%;
     display: inline-block;
+    font-size: 18px;
+}
+
+.tag p{
+    font-size: 16px;
 }
 
 .brand-print{
@@ -61,6 +66,7 @@
  .ticket{
     width: 100%;
     box-shadow: none;
+    border:1px solid #bababa!important;
  }
 
  
@@ -77,23 +83,35 @@
 
  .ticket tr.title td{
     background-color: #2b2869!important;
-    border:1px solid #bababa!important;
+    border-right: 1px solid #bababa!important;
+    border-top: 1px solid #2b2869!important;
+    border-bottom: 1px solid #2b2869!important;
     -webkit-print-color-adjust: exact; 
     color:#fff!important;
     border-collapse: collapse;
  }
 
+ .ticket tr.title td:first-child{
+    border-left: 1px solid #2b2869!important;
+ }
+
+ .ticket tr.title td:last-child{
+    border-right: 1px solid #2b2869!important;
+ }
 
  .ticket tr.subtitle td{
     background-color: #cfd3dd!important;
-    border:1px solid #bababa!important;
+    border-right:1px solid #bababa!important;
+    border-top: 1px solid #cfd3dd!important;
+    border-bottom: 1px solid #cfd3dd!important;
     color:#000000!important;
  }
 
  
 
  .ticket tr td{
-    border: 1px solid #d1d1d1;
+    border-right: 1px solid #bababa;
+    border-top: 1px solid #bababa;
     color: #000000;
     font-size: 15px;
     vertical-align: middle;

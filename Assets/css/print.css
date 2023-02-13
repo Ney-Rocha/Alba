@@ -28,7 +28,7 @@
 }
 
 .no-print {
-    display: none;
+    display: none!important;
 }
 .mb-4{
     margin-bottom: 10px!important;
@@ -169,3 +169,16 @@
     margin-bottom: 25px;
 
  }
+
+ ol {
+   counter-reset: item;
+   padding-left: 15px;
+}
+li {
+   display: block
+}
+li:before {
+   content: counters(item, ".") " ";
+   counter-increment: item;
+   padding-left: 15px;
+}

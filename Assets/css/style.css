@@ -205,6 +205,12 @@ ul{
 .mt-n-5{
     margin-top: -25px!important;
 }
+
+@media screen {
+    .no-screen{
+        display: none !important;
+    }
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS BODY BACKGROUND ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

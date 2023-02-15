@@ -174,11 +174,12 @@
    counter-reset: item;
    padding-left: 15px;
 }
-li {
-   display: block
+ol li {
+   display: block;
+   margin-bottom:5px;
 }
-li:before {
+ol li:before {
    content: counters(item, ".") " ";
    counter-increment: item;
-   padding-left: 15px;
+   padding-left: 15px;   
 }

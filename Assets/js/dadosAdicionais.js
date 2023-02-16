@@ -35,7 +35,7 @@ $(document).ready(function(){
        })
 
          // Cancela Operação mantém valor anterior
-         $(".js-cancel").on('click', function(e){
+        $(".js-cancel").on('click', function(e){
             $(this).prop('hidden', true)
             $(this).siblings('button.js-save').prop('hidden', true)
             $(this).siblings('button.js-edit').prop('hidden', false)
@@ -51,7 +51,7 @@ $(document).ready(function(){
             $(this).siblings('button.js-edit').prop('hidden', false)
             swal.fire({
                 title: '<h3 class="text-danger text-uppercase">Atenção!</h3>',
-                html: '<p>Ao alterar esta informação você subscrever suas preferências anteriores. <br/> Deseja continuar?</p>',
+                html: '<p>Ao alterar esta informação você irá subscrever suas preferências anteriores. <br/> Deseja continuar?</p>',
                 imageUrl: '../Assets/img/icons/Error.png',
                 allowOutsideClick: false,
                 allowEscapeKey: false,

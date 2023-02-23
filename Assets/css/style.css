@@ -2120,6 +2120,66 @@ table#tableApolices.dataTable tbody::after{
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- Apolice ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .line{
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto 50px;
+    display: block;
+ }
+
+.line hr{
+   border-top: 1px solid rgba(0,0,0, .7)
+}
+
+.award{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+}
+
+.award:before{
+    content: "";
+    height: 100px;
+    width: 1px;
+    border-right: 2px solid #898989;
+    position: absolute;
+    right: 76px;
+    bottom: 30px;
+    top: 5px;
+
+}
+
+.award::after{
+    
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f078";
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+}
+
+
+ol {
+    counter-reset: item;
+    padding-left: 15px;
+ }
+ ol li {
+    display: block;
+    margin-bottom:5px;
+ }
+ ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+    padding-left: 15px;   
+ }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- Animate ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 

@@ -17,10 +17,10 @@
     margin-bottom: 20mm;
     }
 @page :left {
-    margin-left: 30mm;
+    margin-left: 20mm;
     }
 @page :right {
-    margin-right: 30mm;
+    margin-right: 20mm;
     }
 
 .print {

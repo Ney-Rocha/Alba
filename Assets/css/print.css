@@ -13,9 +13,12 @@
 @page {
     margin-left: 20mm;
     margin-right: 20mm;
-    margin-top: 20mm;
-    margin-bottom: 20mm;
+    margin-top: 30mm;
+    margin-bottom: 30mm;
+    position: relative;
     }
+
+
 @page :left {
     margin-left: 20mm;
     }
@@ -179,7 +182,9 @@ ol li {
    margin-bottom:5px;
 }
 ol li:before {
-   content: counters(item, ".") " ";
+   content: counters(item, ".") ". ";
    counter-increment: item;
    padding-left: 15px;   
 }
+
+

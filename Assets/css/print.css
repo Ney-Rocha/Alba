@@ -13,14 +13,17 @@
 @page {
     margin-left: 20mm;
     margin-right: 20mm;
-    margin-top: 20mm;
-    margin-bottom: 20mm;
+    margin-top: 30mm;
+    margin-bottom: 30mm;
+    position: relative;
     }
+
+
 @page :left {
-    margin-left: 30mm;
+    margin-left: 20mm;
     }
 @page :right {
-    margin-right: 30mm;
+    margin-right: 20mm;
     }
 
 .print {
@@ -170,4 +173,18 @@
 
  }
 
- 
+ ol {
+   counter-reset: item;
+   padding-left: 15px;
+}
+ol li {
+   display: block;
+   margin-bottom:5px;
+}
+ol li:before {
+   content: counters(item, ".") ". ";
+   counter-increment: item;
+   padding-left: 15px;   
+}
+
+

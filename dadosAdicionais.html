@@ -430,7 +430,7 @@
                                             <div class="col-md-12">
                                                 <div class="estipulante-data-add">
                                                     <div class="card-title mt-4">
-                                                        <h4 class="text-primary mb-4">Dados de Contrato</h4>
+                                                        <h4 class="text-primary mb-4">Dados de Cotação</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -438,69 +438,83 @@
                                         </div><!-- row -->
 
                                         <div class="row mt-3">
+                                                
                                             <div class="col-md-4">
-                                                <p class="text-primary strong mt-2">
-                                                    Início de vigência de contrato:
-                                                </p>
+                                                <label for="vlPremio" class="text-primary strong mt-2">
+                                                Valor do prêmio (R$):
+                                                </label>
                                             </div><!--col-->
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <input name="" id="initVigencia" class="form-control date"></input>
+                                                    <input name="" id="vlPremio" value="1000000" disabled class="form-control money2"></input>
                                                 </div><!--form-group-->
                                             </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div><!-- row -->
 
                                         <div class="row mt-3">
                                             <div class="col-md-4">
-                                                <p class="text-primary strong mt-2">
-                                                    Data da Contratação:
-                                                </p>
+                                                <label for="perPagto" class="text-primary strong mt-2">
+                                                   período de Pagamento:
+                                                </label>
                                             </div><!--col-->
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <input name="" id="dataContratacao" class="form-control date"></input>
-                                                </div><!--form-group-->
+                                                    <input name="" id="perPagto" value="Mensal" disabled class="form-control"></input>
+                                                    
+                                                </div><!--form-group-->                                                
                                             </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div><!-- row -->
 
                                         <div class="row mt-3">
                                             <div class="col-md-4">
-                                                <p class="text-primary strong mt-2">
-                                                    Forma de pagamento:
-                                                </p>
+                                                <label for="diaVenc" class="text-primary strong mt-2">
+                                                   Dia de Vencimento:
+                                                </label>
                                             </div><!--col-->
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <select name="" id="initVigencia" class="form-control">
-                                                        <option value=""></option>
-                                                        <option value="12">12 x R$ 0000,00</option>
-                                                        <option value="11">11 x R$ 0000,00</option>
-                                                        <option value="10">10 x R$ 0000,00</option>
-                                                        <option value="9">09 x R$ 0000,00</option>
-                                                        <option value="8">08 x R$ 0000,00</option>
-                                                        <option value="7">07 x R$ 0000,00</option>
-                                                        <option value="6">06 x R$ 0000,00</option>
-                                                        <option value="5">05 x R$ 0000,00</option>
-                                                        <option value="4">04 x R$ 0000,00</option>
-                                                        <option value="3">03 x R$ 0000,00</option>
-                                                        <option value="2">02 x R$ 0000,00</option>
-                                                        <option value="1">01 x R$ 0000,00</option>
-                                                    </select>
+                                                    <input name="" id="diaVenc" value="10" disabled class="form-control day"></input>
                                                 </div><!--form-group-->
                                             </div><!--col-->
-                                        </div><!-- row -->
-
-                                        <div class="row mt-3">
-                                            <div class="col-md-4">
-                                                <p class="text-primary strong mt-2">
-                                                   Data de Vencimento:
-                                                </p>
-                                            </div><!--col-->
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input name="" id="dataVencimento" data-mask="00" class="form-control"></input>
-                                                </div><!--form-group-->
-                                            </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div><!-- row -->
 
                                     </div><!--estipulante-->
@@ -545,8 +559,8 @@
                             </a>
                         </div> -->
                         <div class="col-sm-12 mt-4">
-                            <a href="anexarDocumentos.html" class="btn btn-primary btn-block icon-button text-uppercase">
-                                Assinatura Digital
+                            <a href="apolice.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                                Emitir Proposta
                                 <i class="fas fa-file-contract ml-2 fa-lg"></i>
                             </a>
                         </div>
@@ -558,7 +572,7 @@
                                 
                             </a>
                         </div>
-                        <div class="col-md-3  col-sm-6 mt-4">
+                        <!-- <div class="col-md-3  col-sm-6 mt-4">
                             <button class="btn btn-outline-primary btn-block ">
                                Enviar por SMS
                                 <span class="fas fa-sms ml-2 "></span>
@@ -575,7 +589,7 @@
                                 Assinatura Física
                                 <span class="fas fa-file-signature ml-2 "></span>
                             </a>
-                        </div>
+                        </div> -->
                     </div><!--row-->
                 </div><!--content-page-->
                 

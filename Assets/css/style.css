@@ -193,6 +193,15 @@ ul{
     padding-left: 0!important;
 }
 
+.pw-10{
+    padding-right: 10px!important;
+    padding-left: 10px!important;
+}
+.pw-15{
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+}
+
 .ph-n{
     padding-top: 0!important;
     padding-bottom: 0!important;
@@ -1056,6 +1065,7 @@ a.brand-icon-profile:hover{
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  -----------------  FORM  Control-------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ textarea.form-control,
  .form-control {
     display: block;
     width: 100%;
@@ -1068,6 +1078,11 @@ a.brand-icon-profile:hover{
     border-radius: 0.25rem;
 }
 
+textarea.form-control{
+    min-height: 100px;
+}
+
+textarea.form-control:focus,
 .form-control:focus {
     color: #495057; 
     background-color: #fff;
@@ -1076,11 +1091,13 @@ a.brand-icon-profile:hover{
     box-shadow: none;
 }
 
+textarea.form-control:disabled,
 .form-control:disabled{
     cursor:not-allowed;
     background-color: rgba(236, 236, 236, 0.3);
 }
 
+form-group.group-danger textarea.form-control,
 .form-group.group-danger .form-control{
     color:#FF0000;
 }
@@ -1840,7 +1857,12 @@ a.brand-icon-profile:hover{
  .icon-finish{
     font-size: 28px;
     margin-bottom: 25px;
+    display: none;
 
+ }
+
+ .icon-finish.show{
+    display: block;
  }
 
  @media screen and (max-width:1024px){

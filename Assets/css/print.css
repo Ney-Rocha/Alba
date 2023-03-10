@@ -8,12 +8,12 @@
     filter: none;
    -ms-filter: none;
    page-break-after: auto;
-   font-size: 12px;
+   font-size: 16px!important;
 }
 
 @page {
-    margin-left: 20mm;
-    margin-right: 20mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
     margin-top: 30mm;
     margin-bottom: 30mm;
     position: relative;
@@ -21,10 +21,10 @@
 
 
 @page :left {
-    margin-left: 20mm;
+    margin-left: 10mm;
     }
 @page :right {
-    margin-right: 20mm;
+    margin-right: 10mm;
     }
 
 .print {
@@ -117,7 +117,7 @@
     border-right: 1px solid #bababa;
     border-top: 1px solid #bababa;
     color: #000000;
-    font-size: 15px;
+    font-size: 16px;
     vertical-align: middle;
  }
 
@@ -135,7 +135,7 @@
  }
 
  .ticket tr td.small{
-    font-size: 12px;
+    font-size: 17px;
     color: #000000;
  }
 
@@ -189,3 +189,6 @@ ol li:before {
 }
 
 
+.text-print p{
+   font-size:16px!important;
+}

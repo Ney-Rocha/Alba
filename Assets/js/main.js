@@ -14,7 +14,12 @@ $(document).ready(function(){
         }
     });
 
-   
+    $('ul.progressbar-step li a').on('click', function(event) {
+        const parentListItem = $(this).parent('li');
+        if (!parentListItem.hasClass('active')) {
+            event.preventDefault();
+        }
+    });
    
 });
 

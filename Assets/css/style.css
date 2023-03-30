@@ -1313,7 +1313,8 @@ form-group.group-danger textarea.form-control,
  ----------------- ADD ESTIPULANTE -------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .content-page {
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -1333,6 +1334,21 @@ form-group.group-danger textarea.form-control,
     padding: 0;
     position: absolute;
     left: -40px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn.btn-next {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    color: #2E2C6F;
+    font-size: 18px;
+    padding: 0;
+    position: absolute;
+    right: -40px;
     top: 0;
     display: flex;
     justify-content: center;
@@ -1370,10 +1386,13 @@ form-group.group-danger textarea.form-control,
         height: 60px;
         color: #D9D9D9;
         margin-bottom: 50px;
+        
     }
 
         .progressbar-step li a {
             color: #D9D9D9;
+            text-decoration: none;
+            cursor: not-allowed;
         }
 
         .progressbar-step li::before {
@@ -1411,6 +1430,7 @@ form-group.group-danger textarea.form-control,
             .progressbar-step li.active a {
                 color: #2B2869;
                 text-decoration: none;
+                cursor: pointer;
             }
 
             .progressbar-step li.active:before {

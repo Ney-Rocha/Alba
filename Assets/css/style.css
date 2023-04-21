@@ -1327,7 +1327,6 @@ form-group.group-danger textarea.form-control,
     display: flex;
     width: 100%;
 }
-<<<<<<< HEAD
 .btn.btn-rewind{
     width: 25px;
     height: 25px;
@@ -1335,16 +1334,6 @@ form-group.group-danger textarea.form-control,
     background-color:#D9D9D9;
     color:#2E2C6F;
     font-size:18px;
-=======
-
-.btn.btn-rewind {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    color: #2E2C6F;
-    font-size: 18px;
->>>>>>> 63fe08f64809f6ff5049df942cb4aa2910066acf
     padding: 0;
     position: absolute;
     left: -40px;
@@ -1385,7 +1374,6 @@ form-group.group-danger textarea.form-control,
     /* counter-reset: step; */
 }
 
-<<<<<<< HEAD
 .progressbar-step li{
     display: flex;
     justify-content: center;
@@ -1410,34 +1398,6 @@ form-group.group-danger textarea.form-control,
 
 .progressbar-step li::before{
     /* content: counter(step);
-=======
-    .progressbar-step li {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-        list-style: none;
-        /* float: left; */
-        width: 100%;
-        position: relative;
-        text-align: center;
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 700;
-        height: 60px;
-        color: #D9D9D9;
-        margin-bottom: 50px;
-        
-    }
-
-        .progressbar-step li a {
-            color: #D9D9D9;
-            text-decoration: none;
-            cursor: not-allowed;
-        }
-
-        .progressbar-step li::before {
-            /* content: counter(step);
->>>>>>> 63fe08f64809f6ff5049df942cb4aa2910066acf
     counter-increment: step; */
             content: "";
             width: 20px;
@@ -1468,7 +1428,6 @@ form-group.group-danger textarea.form-control,
             color: #2B2869;
         }
 
-<<<<<<< HEAD
 .progressbar-step li.active{
     color: #2B2869;
 }
@@ -1485,22 +1444,15 @@ form-group.group-danger textarea.form-control,
 .progressbar-step li.active:after{
     background-color: #00A651;    
 }
-=======
-            .progressbar-step li.active a {
-                color: #2B2869;
-                text-decoration: none;
-                cursor: pointer;
-            }
->>>>>>> 63fe08f64809f6ff5049df942cb4aa2910066acf
 
-            .progressbar-step li.active:before {
-                background-color: #00A651;
-                border-color: #00A651;
-            }
+.progressbar-step li.active:before {
+    background-color: #00A651;
+    border-color: #00A651;
+}
 
-            .progressbar-step li.active:after {
-                background-color: #00A651;
-            }
+.progressbar-step li.active:after {
+    background-color: #00A651;
+}
 
 .title-content {
     display: flex;
@@ -1603,11 +1555,7 @@ form-group.group-danger textarea.form-control,
     color: #fff;
 }
 
-<<<<<<< HEAD
 .tag p{
-=======
-.tag p {
->>>>>>> 63fe08f64809f6ff5049df942cb4aa2910066acf
     font-size: 13px;
     font-weight: 700;
     line-height: 1.4;
@@ -1619,27 +1567,27 @@ form-group.group-danger textarea.form-control,
     margin-top: 20px;
 }
 
-    .type-profile li a {
-        font-size: 14px;
-        text-transform: uppercase;
-        line-height: 1;
-        color: #898989;
-        padding: 8px 20px;
-        margin-right: 8px;
-        border-radius: 50px;
-        display: flex;
-    }
+.type-profile li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #898989;
+    padding: 8px 20px;
+    margin-right: 8px;
+    border-radius: 50px;
+    display: flex;
+}
 
-        .type-profile li a:hover {
-            text-decoration: none;
-        }
+.type-profile li a:hover {
+    text-decoration: none;
+}
 
-        .type-profile li a.active {
-            text-transform: uppercase;
-            line-height: 1;
-            color: #fff;
-            background-color: #00A651;
-        }
+.type-profile li a.active {
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+    background-color: #00A651;
+}
 
 .content-profile {
     display: none;
@@ -1666,9 +1614,9 @@ form-group.group-danger textarea.form-control,
         flex-direction: column
     }
 
-        .type-profile li a {
-            margin-bottom: 6px;
-        }
+    .type-profile li a {
+        margin-bottom: 6px;
+    }
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++

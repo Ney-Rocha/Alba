@@ -1290,6 +1290,10 @@ form-group.group-danger textarea.form-control,
     justify-content: space-around;
 }
 
+.gray-scale{
+    filter: contrast(1.75) brightness(.6);
+}
+
 @media screen and (max-width:767px) {
     .choice-action {
         display: flex;

@@ -26,6 +26,20 @@ $(document).ready(function(){
             $('#selectCongenere').removeClass('animate__fadeInRight')
         }
     })
+
+    // on / off select congenere
+    $('input[type="radio"][name="typesecurity"]').on('change', function(){
+        var typeSecurity = $('input[name="typesecurity"]:checked').val()
+        if ( typeSecurity == 'novoSeguro'){
+            $('#initialDate').addClass('hide')
+            $('#initialDate').removeClass('animate__fadeInRight')
+        } else {
+            $('#initialDate').removeClass('hide')
+            $('#initialDate').addClass('animate__fadeInRight')
+        }
+    })
+
+
      
      //  chosen plugin
      $(".chosen-select").chosen({

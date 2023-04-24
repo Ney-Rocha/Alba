@@ -32,10 +32,10 @@ $(document).ready(function(){
         var typeSecurity = $('input[name="typesecurity"]:checked').val()
         if ( typeSecurity == 'novoSeguro'){
             $('#initialDate').addClass('hide')
-            $('#initialDate').removeClass('animate__fadeInRight')
+            $('#initialDate').removeClass('animate__fadeInUp')
         } else {
             $('#initialDate').removeClass('hide')
-            $('#initialDate').addClass('animate__fadeInRight')
+            $('#initialDate').addClass('animate__fadeInUp')
         }
     })
 

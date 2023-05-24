@@ -2291,3 +2291,23 @@ ol {
 .animate__animated {
     animation-duration: .25s;
 }
+
+.toast {
+    
+    background-color: rgba(17, 236, 67, 0.8);
+}
+
+.toast-header {
+    color:#4b4949;
+    background-color: rgba(17, 247, 67, 0.85);
+}
+
+.toast-bootstrap{
+    background-color: rgba(17, 247, 67, .75);
+    color:#535252;
+    min-width: 300px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 1000;
+}

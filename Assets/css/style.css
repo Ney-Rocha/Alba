@@ -2298,13 +2298,13 @@ ol {
 }
 
 .toast-header {
-    color:#4b4949;
+    color:#242246;
     background-color: rgba(17, 247, 67, 0.85);
 }
 
 .toast-bootstrap{
     background-color: rgba(17, 247, 67, .75);
-    color:#535252;
+    color:#242246;
     min-width: 300px;
     position: absolute;
     top: 15px;
